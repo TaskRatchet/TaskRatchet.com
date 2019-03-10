@@ -1,0 +1,31 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 30rem;
+    margin: 30vh auto 0 auto;
+    font-size: .9rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    font-weight: bold;
+    border: 1px solid grey;
+    text-decoration: none;
+    color: black;
+    padding: .5em;
+    display: inline-block;
+}
