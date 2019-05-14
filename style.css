@@ -23,11 +23,28 @@ p {
 }
 
 .button {
-
     font-weight: bold;
     border: 1px solid grey;
     text-decoration: none;
     color: #111111;
     padding: .5em;
     display: inline-block;
+}
+
+.button.primary {
+    font-weight: bold;
+    border: 1px solid #090909;
+    text-decoration: none;
+    color: white;
+    padding: .5em;
+    display: inline-block;
+    background-color: #282828;
+}
+
+.info {
+    margin-top: 1.5rem;
+    padding: .5em;
+    background-color: #aae2ff;
+    color: #1f4760;
+    border: 1px solid #98b7c3;
 }

@@ -9,9 +9,37 @@
 
 <h1>TaskRatchet</h1>
 <h2>The Todo List with Teeth</h2>
+
 <p>You decide what you want to do, when you want to do it by, and how much you’ll pay if you don’t. TaskRatchet will make
 	sure you follow through. </p>
+
+<!--<a href="join.html" class="button primary">Join</a>-->
 <a class="button" href="https://forum.beeminder.com/t/retroratchet-development-updates/5037" target="_blank">Read development updates</a>
+
+<script>
+	function findGetParameter(parameterName) {
+		var result = null,
+			tmp = [];
+		var items = location.search.substr(1).split("&");
+		for (var index = 0; index < items.length; index++) {
+			tmp = items[index].split("=");
+			if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+		}
+		return result;
+	}
+
+	(function() {
+		var stripe = findGetParameter("stripe");
+
+		if (stripe === "success") {
+			document.body.innerHTML += '<div class="info">Success! Thank you so much for joining the alpha! Hit me up at nathan@taskratchet.com if you don\'t hear from me soon.</div>';
+		}
+
+		if (stripe === "canceled") {
+			document.body.innerHTML += '<div class="info">Looks like you canceled. We\'ll be right here if you change your mind. </div>';
+		}
+	})();
+</script>
 
 </body>
 </html>
