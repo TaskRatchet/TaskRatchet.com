@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>TaskRatchet | Join the Alpha</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	
+---
+permalink: "/join/"
+layout: page
+title:  "Join the Alpha"
+---
+
 <p>TaskRatchet is a todo list with teeth. You decide what you want to do, when you want to do it by, and how much you’ll 
 pay if you don’t. TaskRatchet will make sure you follow through.</p>
 
@@ -17,14 +14,12 @@ pay if you don’t. TaskRatchet will make sure you follow through.</p>
 <h3>TaskRatchet Alpha Membership — $1</h3>
 
 <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
+
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-		style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
 		id="checkout-button-sku_F4Ha6GSmGhP8Lw"
-		role="link"
->
+		role="link">
 	Checkout
 </button>
 
@@ -58,6 +53,3 @@ pay if you don’t. TaskRatchet will make sure you follow through.</p>
 			});
 	});
 </script>
-
-</body>
-</html>
