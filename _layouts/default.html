@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
+<body>
 
-  <div class="wrapper">
+<div class="wrapper">
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -15,18 +15,10 @@
     </main>
 
     {%- include footer.html -%}
-  </div>
+</div>
 
-    <img class="background-image" id="background-image" data-turbolinks-permanent src="/assets/bg_500.jpg" srcset="/assets/bg_1000.jpg 1000w, /assets/bg_2000.jpg 2000w, /assets/bg_full.jpg 4608w" alt="">
-
-  <script>
-    document.addEventListener("turbolinks:load", function(event) {
-      if (typeof ga === "function") {
-        ga("set", "location", event.data.url);
-        ga("send", "pageview");
-      }
-    });
-  </script>
-  </body>
+<img class="background-image" id="background-image" data-turbolinks-permanent src="/assets/bg_500.jpg"
+     srcset="/assets/bg_1000.jpg 1000w, /assets/bg_2000.jpg 2000w, /assets/bg_full.jpg 4608w" alt="">
+</body>
 
 </html>

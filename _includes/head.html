@@ -5,9 +5,9 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
+  <script src="/assets/turbolinks.js"></script>
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  <script src="/assets/turbolinks.js"></script>
   <script src="https://js.stripe.com/v3"></script>
 </head>

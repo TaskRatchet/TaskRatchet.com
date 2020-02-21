@@ -6,4 +6,12 @@
   gtag('js', new Date());
 
   gtag('config', '{{ site.google_analytics }}');
+
+  document.addEventListener("turbolinks:load", function(event) {
+      if (typeof ga === "function") {
+          console.log('turbolinks ga');
+          ga("set", "location", event.data.url);
+          ga("send", "pageview");
+      }
+  });
 </script>
