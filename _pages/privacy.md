@@ -27,6 +27,7 @@ Email           | Google Cloud Platfrom         | Authentication, support, notif
 Password        | Google Cloud Platform         | Authentication
 Payment details | Stripe                        | To enable the service
 Task metadata   | Google Cloud Platform, Stripe | To enable the service
+Usage data      | Amplitude, Google Analytics   | Business intelligence, marketing
 
 ## Protection of Certain Personally-Identifying Information
 
