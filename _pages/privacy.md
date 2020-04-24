@@ -123,4 +123,6 @@ TaskRatchet may change its Privacy Policy from time to time, and at TaskRatchetâ
 
 Please contact us if you have any questions about our privacy policy or information we hold about you by emailing nathan@taskratchet.com.
 
+[See full history of this document](https://github.com/narthur/TaskRatchet.com/commits/master/_pages/privacy.md)
+
 Adapted from [WordPress.org's privacy policy](https://wordpress.org/about/privacy/), licensed CC-BY-SA.
