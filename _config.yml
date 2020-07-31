@@ -23,6 +23,18 @@ url: "https://taskratchet.com" # the base hostname & protocol for your site, e.g
 github_username: narthur
 google_analytics: UA-158864252-1
 
+nav:
+  - title: "Home"
+    href: "/"
+  - title: "Meet"
+    href: "/meet"
+  - title: "Privacy Policy"
+    href: "/privacy"
+  - title: "Terms of Service"
+    href: "/terms"
+  - title: "Twitter"
+    href: "https://twitter.com/TaskRatchet"
+
 # Build settings
 markdown: kramdown
 theme: minima
