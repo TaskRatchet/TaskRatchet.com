@@ -34,8 +34,10 @@ nav:
     href: "/terms"
   - title: "Twitter"
     href: "https://twitter.com/TaskRatchet"
-  - title: "Documentation"
+  - title: "Docs"
     href: "https://docs.taskratchet.com/"
+  - title: "FAQ"
+    href: "https://docs.taskratchet.com/faq.html"
 
 # Build settings
 markdown: kramdown
