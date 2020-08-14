@@ -26,18 +26,16 @@ google_analytics: UA-158864252-1
 nav:
   - title: "Home"
     href: "/"
-  - title: "Meet"
-    href: "/meet"
-  - title: "Privacy Policy"
-    href: "/privacy"
-  - title: "Terms of Service"
-    href: "/terms"
-  - title: "Twitter"
-    href: "https://twitter.com/TaskRatchet"
-  - title: "Docs"
-    href: "https://docs.taskratchet.com/"
   - title: "FAQ"
     href: "https://docs.taskratchet.com/faq.html"
+  - title: "Help"
+    href: "https://docs.taskratchet.com/"
+  - title: "Twitter"
+    href: "https://twitter.com/TaskRatchet"
+  - title: "Privacy"
+    href: "/privacy"
+  - title: "Terms"
+    href: "/terms"
 
 # Build settings
 markdown: kramdown
