@@ -8,10 +8,9 @@ title:  "Terms of Service"
 <p>By accessing the website at <a href="http://TaskRatchet.com">http://TaskRatchet.com</a>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
 <h3>2. Use License</h3>
 <ol type="a">
-    <li>Permission is granted to temporarily download one copy of the materials (information or software) on TaskRatchet's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+    <li>Permission is granted to temporarily download the materials (information or software) on TaskRatchet's website. This is the grant of a license, not a transfer of title, and under this license you may not:
         <ol type="i">
             <li>modify or copy the materials;</li>
-            <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
             <li>attempt to decompile or reverse engineer any software contained on TaskRatchet's website;</li>
             <li>remove any copyright or other proprietary notations from the materials; or</li>
             <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
