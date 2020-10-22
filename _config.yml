@@ -26,6 +26,8 @@ google_analytics: UA-158864252-1
 nav:
   - title: "Home"
     href: "/"
+  - title: "How It Works"
+    href: "https://docs.taskratchet.com/works.html"
   - title: "FAQ"
     href: "https://docs.taskratchet.com/faq.html"
   - title: "Help"
