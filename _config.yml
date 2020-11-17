@@ -38,6 +38,8 @@ nav:
     href: "/privacy"
   - title: "Terms"
     href: "/terms"
+  - title: "Log In"
+    href: "https://app.taskratchet.com"
 
 # Build settings
 markdown: kramdown
