@@ -1,8 +1,6 @@
-@charset "utf-8";
-
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #111111;
   max-width: 34rem;
   margin: 10vw auto 10vw auto;
@@ -10,21 +8,21 @@ body {
 }
 
 .site-header {
-  .site-title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    max-width: 100%;
-    display: block;
-    overflow: hidden;
-    word-break: break-all;
-    line-height: 1.2em;
-  }
-  h2, h3 {
-    margin: 0;
-  }
   margin-bottom: 2rem;
+}
+.site-header .site-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  word-break: break-all;
+  line-height: 1.2em;
+}
+.site-header h2, .site-header h3 {
+  margin: 0;
 }
 
 .site-nav {
@@ -40,9 +38,9 @@ body {
 }
 
 .wrapper {
-  background-color: rgba(255,255,255,1);
+  background-color: white;
   padding: 1rem 2rem;
-  box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,.07);
+  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.07);
 }
 
 .button {
@@ -50,7 +48,7 @@ body {
   border: 1px solid grey;
   text-decoration: none;
   color: #111111;
-  padding: .5em;
+  padding: 0.5em;
   display: inline-block;
 }
 
@@ -59,7 +57,7 @@ body {
   border: 1px solid #090909;
   text-decoration: none;
   color: white;
-  padding: .5em;
+  padding: 0.5em;
   display: inline-block;
   background-color: #282828;
 }
@@ -73,3 +71,5 @@ body {
   object-fit: cover;
   z-index: -1;
 }
+
+/*# sourceMappingURL=minima.css.map */
