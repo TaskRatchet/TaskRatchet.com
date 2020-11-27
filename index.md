@@ -8,7 +8,7 @@ layout: home
 TaskRatchet is a todo list that charges you real money if you don't complete your tasks on time. Define your
 task, set your deadline, and choose your stakes. TaskRatchet will make sure you follow through.
 
-<a href="https://app.taskratchet.com" class="button primary" target="_blank" rel="noopener noreferrer">Get Started</a>
+<a href="https://app.taskratchet.com" class="button primary" target="_blank" rel="noopener noreferrer">Sign Up</a>
 <a class="button" href="https://forum.beeminder.com/t/retroratchet-development-updates/5037" target="_blank" rel="noopener noreferrer">Read development updates</a>
 
 <hr />
