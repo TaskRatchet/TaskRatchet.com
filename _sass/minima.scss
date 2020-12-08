@@ -6,15 +6,17 @@ body {
   color: #111111;
   max-width: 34rem;
   margin: 10vw auto 10vw auto;
-  background-color: #d7d7d7;
+  background: radial-gradient(circle at center, #494e5c, #181e1f);
+  line-height: 1.3em;
+  height: 100%;
 }
 
 .site-header {
   .site-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #000000;
     max-width: 100%;
     display: block;
     overflow: hidden;
@@ -23,6 +25,9 @@ body {
   }
   h2, h3 {
     margin: 0;
+  }
+  h3 {
+    color: #525257;
   }
   margin-bottom: 2rem;
 }
@@ -33,16 +38,20 @@ body {
 }
 
 .page-link {
-  color: black;
+  color: rgb(127, 127, 127);
   margin-right: 1em;
   white-space: nowrap;
   display: inline-block;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .wrapper {
   background-color: rgba(255,255,255,1);
   padding: 1rem 2rem;
-  box-shadow: 0 0.5rem 0.7rem rgba(0,0,0,.07);
+  box-shadow: 0 0.5rem 0.7rem rgba(5, 25, 47, 0.5);
 }
 
 .button {

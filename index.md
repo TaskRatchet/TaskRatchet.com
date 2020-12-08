@@ -11,9 +11,9 @@ task, set your deadline, and choose your stakes. TaskRatchet will make sure you 
 <a href="https://app.taskratchet.com" class="button primary" target="_blank" rel="noopener noreferrer">Sign Up</a>
 <a class="button" href="https://forum.beeminder.com/t/retroratchet-development-updates/5037" target="_blank" rel="noopener noreferrer">Read development updates</a>
 
-<hr />
+<br />
 
-# Integrations
+### Integrates With
 
 <a href="https://www.beeminder.com/home" target="_blank" rel="noopener noreferrer">
 <img src="/assets/beeminder.png" alt="Beeminder" width="200" />
