@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+$grey: rgb(102, 102, 102);
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: .9rem;
@@ -38,7 +40,7 @@ body {
 }
 
 .page-link {
-  color: rgb(127, 127, 127);
+  color: $grey;
   margin-right: 1em;
   white-space: nowrap;
   display: inline-block;
@@ -71,6 +73,16 @@ body {
   padding: .5em;
   display: inline-block;
   background-color: #282828;
+}
+
+.button.link {
+  border: none;
+  font-weight: normal;
+  color: $grey;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .background-image {
