@@ -40,6 +40,7 @@ nav:
     href: "/terms"
   - title: "Log In"
     href: "https://app.taskratchet.com"
+    classes: "button"
 
 # Build settings
 markdown: kramdown

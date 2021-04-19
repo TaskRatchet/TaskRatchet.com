@@ -45,6 +45,9 @@ body {
 .page-link:hover {
   text-decoration: underline;
 }
+.page-link:last-child {
+  margin-right: 0;
+}
 
 .wrapper {
   background-color: white;
