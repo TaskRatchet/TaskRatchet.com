@@ -20,14 +20,14 @@ In each case, TaskRatchet collects such information only insofar as is necessary
 
 All of the information that is collected on TaskRatchet will be handled in accordance with GDPR legislation.
 
-Information     | Storage and Processing        | Reason
-----------------|-------------------------------|---------------------------------------------------
-Name            | Google Cloud Platform         | Personalization
-Email           | Google Cloud Platfrom         | Authentication, support, notifications, marketing
-Password        | Google Cloud Platform         | Authentication
-Payment details | Stripe                        | To enable the service
-Task metadata   | Google Cloud Platform, Stripe | To enable the service
-Usage data      | Amplitude, Google Analytics   | Business intelligence, marketing
+Information     | Storage and Processing                 | Reason
+----------------|----------------------------------------|---------------------------------------------------
+Name            | Google Cloud Platform                  | Personalization
+Email           | Google Cloud Platfrom                  | Authentication, support, notifications, marketing
+Password        | Google Cloud Platform                  | Authentication
+Payment details | Stripe                                 | To enable the service
+Task metadata   | Google Cloud Platform, Stripe          | To enable the service
+Usage data      | Amplitude, Google Analytics, Highlight | Business intelligence, marketing
 
 ## Protection of Certain Personally-Identifying Information
 
@@ -126,3 +126,8 @@ Please contact us if you have any questions about our privacy policy or informat
 [See full history of this document](https://github.com/narthur/TaskRatchet.com/commits/master/_pages/privacy.md)
 
 Adapted from [WordPress.org's privacy policy](https://wordpress.org/about/privacy/), licensed CC-BY-SA.
+
+## Changelog
+
+- June 16, 2022: Added changelog
+- June 16, 2022: Added Highlight to list of storage and processing services
