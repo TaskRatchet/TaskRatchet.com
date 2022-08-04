@@ -16,14 +16,14 @@ In each case, TaskRatchet collects such information only insofar as is necessary
 
 All of the information that is collected on TaskRatchet will be handled in accordance with GDPR legislation.
 
-Information     | Storage and Processing        | Reason
-----------------|-------------------------------|---------------------------------------------------
-Name            | Google Cloud Platform         | Personalization
-Email           | Google Cloud Platfrom         | Authentication, support, notifications, marketing
-Password        | Google Cloud Platform         | Authentication
-Payment details | Stripe                        | To enable the service
-Task metadata   | Google Cloud Platform, Stripe | To enable the service
-Usage data      | Amplitude, Google Analytics, Highlight   | Business intelligence, marketing
+Information     | Storage and Processing                 | Reason
+----------------|----------------------------------------|---------------------------------------------------
+Name            | Google Cloud Platform                  | Personalization
+Email           | Google Cloud Platfrom                  | Authentication, support, notifications, marketing
+Password        | Google Cloud Platform                  | Authentication
+Payment details | Stripe                                 | To enable the service
+Task metadata   | Google Cloud Platform, Stripe          | To enable the service
+Usage data      | Amplitude, Google Analytics, Highlight | Business intelligence, marketing
 
 ## Protection of Certain Personally-Identifying Information
 
