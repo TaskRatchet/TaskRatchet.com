@@ -1,15 +1,15 @@
 :root {
-    --theme-warm-lighter: #ff9915;
-    --theme-warm-light: #ff8915;
-    --theme-warm: #ff8915;
-    --theme-warm-dark: #cc6110;
-    --theme-warm-darker: #b2550e;
+    --theme-warm-lighter: #ff6427;
+    --theme-warm-light: #ff5527;
+    --theme-warm: #fa4627;
+    --theme-warm-dark: #c6371f;
+    --theme-warm-darker: #ad301b;
 
-    --theme-cool-lighter: #27dfd7;
-    --theme-cool-light: #20b9b2;
-    --theme-cool: #1a938e;
-    --theme-cool-dark: #105f5c;
-    --theme-cool-darker: #0c4644;
+    --theme-cool-lighter: #00e1f0;
+    --theme-cool-light: #00bdca;
+    --theme-cool: #009aa4;
+    --theme-cool-dark: #006a71;
+    --theme-cool-darker: #005257;
 
     --vp-c-brand: var(--theme-cool);
     --vp-c-brand-light: var(--theme-cool-light);
