@@ -4,6 +4,9 @@ layout: home
 hero:
     name: "TaskRatchet"
     text: "The Todo List You Won't Ignore"
+    image:
+      src: ./index/midjourney-a_programmer_at_work.png
+      alt: "A programmer at work (source: Midjourney)"
     actions:
         - theme: brand
           text: "Sign Up"
