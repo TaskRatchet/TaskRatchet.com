@@ -1,7 +1,27 @@
 :root {
-    --vp-c-brand: var(--vp-c-red);
-    --vp-c-brand-light: var(--vp-c-red-light);
-    --vp-c-brand-lighter: var(--vp-c-red-lighter);
-    --vp-c-brand-dark: var(--vp-c-red-dark);
-    --vp-c-brand-darker: var(--vp-c-red-darker);
+    --theme-warm-lighter: #ff6427;
+    --theme-warm-light: #ff5527;
+    --theme-warm: #fa4627;
+    --theme-warm-dark: #c6371f;
+    --theme-warm-darker: #ad301b;
+
+    --theme-cool-lighter: #00e1f0;
+    --theme-cool-light: #00bdca;
+    --theme-cool: #009aa4;
+    --theme-cool-dark: #006a71;
+    --theme-cool-darker: #005257;
+
+    --vp-c-brand: var(--theme-cool);
+    --vp-c-brand-light: var(--theme-cool-light);
+    --vp-c-brand-lighter: var(--theme-cool-lighter);
+    --vp-c-brand-dark: var(--theme-cool-dark);
+    --vp-c-brand-darker: var(--theme-cool-darker);
+}
+
+.dark {
+    --vp-c-brand: var(--theme-warm);
+    --vp-c-brand-light: var(--theme-warm-light);
+    --vp-c-brand-lighter: var(--theme-warm-lighter);
+    --vp-c-brand-dark: var(--theme-warm-dark);
+    --vp-c-brand-darker: var(--theme-warm-darker);
 }
