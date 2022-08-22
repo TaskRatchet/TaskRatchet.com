@@ -28,3 +28,5 @@ task, set your deadline, and choose your stakes. TaskRatchet will make sure you 
     details: "Use Beeminder to commit to regularly creating and completing tasks. TaskRatchet will automatically send data to your Beeminder goal."
     link: "https://www.beeminder.com/taskratchet"
 ---
+
+<BuiltBy />

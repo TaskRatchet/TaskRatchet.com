@@ -8,13 +8,13 @@ defineProps<{
 </script>
 
 <template>
-<a v-if="link" v-bind:href="link">
-  <article class="VPFeature">
-    <div v-if="icon" class="icon">{{ icon }} hello hello</div>
-    <h2 class="title">{{ title }}</h2>
-    <p class="details">{{ details }}</p>
-  </article>
-</a>
+  <a v-if="link" v-bind:href="link">
+    <article class="VPFeature">
+      <div v-if="icon" class="icon">{{ icon }} hello hello</div>
+      <h2 class="title">{{ title }}</h2>
+      <p class="details">{{ details }}</p>
+    </article>
+  </a>
 </template>
 
 <style scoped>
@@ -25,6 +25,7 @@ defineProps<{
   height: 100%;
   background-color: var(--vp-c-bg-soft);
 }
+
 .icon {
   display: flex;
   justify-content: center;
@@ -36,14 +37,17 @@ defineProps<{
   height: 48px;
   font-size: 24px;
 }
+
 .dark .icon {
   background-color: var(--vp-c-bg);
 }
+
 .title {
   line-height: 24px;
   font-size: 16px;
   font-weight: 600;
 }
+
 .details {
   padding-top: 8px;
   line-height: 24px;
