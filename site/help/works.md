@@ -21,7 +21,7 @@ Currently, the only reminder that TaskRatchet has is a daily summary email which
 completed. This email is not sent if you don't currently have any outstanding tasks.
 
 Daily emails are almost certainly not the optimal solution for reminders. If you have opinions regarding how reminders should work,
-please email me at nathan@taskratchet.com. The more feedback I can get on how people would like reminders to work, the better!
+please email me at support@taskratchet.com. The more feedback I can get on how people would like reminders to work, the better!
 
 ## Complete the Task
 
@@ -32,11 +32,11 @@ for that task.
 
 If you don't mark the task as complete on time, a series of events are triggered within specific time periods after the task's deadline:
 
-Window        | Event | Calling Not-Legit
---------------|-------|-------------------
-**0-6 hrs**   | TaskRatchet sends you a charge notification email. | Reply direclty to the charge email to pause the charge until I can respond.
-**24-30 hrs** | TaskRatchet initiates a charge which will appear in your bank without removing the money. | If you email me in time, I can cancel the charge without any funds being removed from your account.
-**48-54 hrs** | TaskRatchet removes the money from your bank. | Calling not-legit at this point will result in a refund.
+| Window        | Event                                                                                     | Calling Not-Legit                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| **0-6 hrs**   | TaskRatchet sends you a charge notification email.                                        | Reply direclty to the charge email to pause the charge until I can respond.                         |
+| **24-30 hrs** | TaskRatchet initiates a charge which will appear in your bank without removing the money. | If you email me in time, I can cancel the charge without any funds being removed from your account. |
+| **48-54 hrs** | TaskRatchet removes the money from your bank.                                             | Calling not-legit at this point will result in a refund.                                            |
 
 ## Calling a Charge Not Legit
 

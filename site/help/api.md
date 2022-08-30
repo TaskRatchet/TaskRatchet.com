@@ -7,7 +7,7 @@ The API is not stable, and may change at any time.
 TaskRatchet has an API you can use to list, update, and create new tasks, among other things.
 Unfortunately, the API is not yet stable enough for me to prioritize documenting it publicly.
 If you would like more information regaring how you can use TaskRatchet's API, or you find
-anything in this document that seems inaccurate, please email me at <nathan@taskratchet.com>.
+anything in this document that seems inaccurate, please email me at <support@taskratchet.com>.
 
 You can find your API user ID and token in your account settings.
 
@@ -23,36 +23,36 @@ You can find your API user ID and token in your account settings.
 
 The API uses two custom headers for authentication.
 
-Header                 | Description
------------------------|-------------------------------------------------
-`X-Taskratchet-Userid` | Your account ID, found in your account settings
-`X-Taskratchet-Token`  | Your API token, found in your account settings
+| Header                 | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `X-Taskratchet-Userid` | Your account ID, found in your account settings |
+| `X-Taskratchet-Token`  | Your API token, found in your account settings  |
 
 ## Schema
 
 Base URL: <https://api.taskratchet.com/api1/>
 
-Endpoint                 | Description
--------------------------|-------------------------
-`GET me`                 | Get your profile data
-`PUT me`                 | Update your profile data
-`GET me/tasks`           | Get all your tasks
-`POST me/tasks`          | Create a new task
-`GET me/tasks/{task_id}` | Get a specific task
-`PUT me/tasks/{task_id}` | Update a specific task
-`GET status`             | Get API status details
-`GET timezones`          | List of valid timezones
+| Endpoint                 | Description              |
+| ------------------------ | ------------------------ |
+| `GET me`                 | Get your profile data    |
+| `PUT me`                 | Update your profile data |
+| `GET me/tasks`           | Get all your tasks       |
+| `POST me/tasks`          | Create a new task        |
+| `GET me/tasks/{task_id}` | Get a specific task      |
+| `PUT me/tasks/{task_id}` | Update a specific task   |
+| `GET status`             | Get API status details   |
+| `GET timezones`          | List of valid timezones  |
 
 ### `GET me`
 
-Response Field | Type   | Description
----------------|--------|--------------------------------------------------------
-id             | string | The account's unique identifier
-name           | string | User's full name
-email          | string | User's email address
-timezone       | string | User's current account timezone
-cards          | array  | List of user's payment methods
-integrations   | object | User's integration settings; currently only Beeminder
+| Response Field | Type   | Description                                           |
+| -------------- | ------ | ----------------------------------------------------- |
+| id             | string | The account's unique identifier                       |
+| name           | string | User's full name                                      |
+| email          | string | User's email address                                  |
+| timezone       | string | User's current account timezone                       |
+| cards          | array  | List of user's payment methods                        |
+| integrations   | object | User's integration settings; currently only Beeminder |
 
 Example response:
 
@@ -74,13 +74,13 @@ Example response:
 
 ### `PUT me`
 
-Input Field  | Type   | Description
--------------|--------|--------------------------------------------------------
-name         | string | User's full name
-email        | string | User's email address
-timezone     | string | User's timezone; for valid values, see `GET timezones`
-new_password | string | New password
-integrations | object | User's integration settings; currently only Beeminder
+| Input Field  | Type   | Description                                            |
+| ------------ | ------ | ------------------------------------------------------ |
+| name         | string | User's full name                                       |
+| email        | string | User's email address                                   |
+| timezone     | string | User's timezone; for valid values, see `GET timezones` |
+| new_password | string | New password                                           |
+| integrations | object | User's integration settings; currently only Beeminder  |
 
 Response is the updated user object--see `GET me`.
 
@@ -89,16 +89,16 @@ Response is the updated user object--see `GET me`.
 Returns an array of tasks. Currently it returns all tasks ever associated with the user. In the future
 I hope to update it to be paginated and filterable.
 
-Task Field    | Type    | Description
---------------|---------|------------------------------------------------------------------------------
-id            | string  | Task's unique identifier
-task          | string  | Task's title
-due           | string  | Task's timezone-agnostic due string
-due_timestamp | number  | Task's precise due time, taking the user's current timezone into account. Changing the user's timezone will change this number for all tasks.
-cents         | number  | Task's stakes
-complete      | boolean | Whether or not the task has been completed
-status        | string  | One of "complete", "expired", or "pending"
-timezone      | string  | The user's current timezone
+| Task Field    | Type    | Description                                                                                                                                   |
+| ------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| id            | string  | Task's unique identifier                                                                                                                      |
+| task          | string  | Task's title                                                                                                                                  |
+| due           | string  | Task's timezone-agnostic due string                                                                                                           |
+| due_timestamp | number  | Task's precise due time, taking the user's current timezone into account. Changing the user's timezone will change this number for all tasks. |
+| cents         | number  | Task's stakes                                                                                                                                 |
+| complete      | boolean | Whether or not the task has been completed                                                                                                    |
+| status        | string  | One of "complete", "expired", or "pending"                                                                                                    |
+| timezone      | string  | The user's current timezone                                                                                                                   |
 
 Example response:
 
@@ -119,11 +119,11 @@ Example response:
 
 ### `POST me/tasks`
 
-Input Field | Type   | Description
-------------|--------|-------------------------------------------------------------
-task        | string | Task title
-due         | string | Due date and time in string of format `3/25/2020, 11:59 PM`
-cents       | number | Stakes in cents
+| Input Field | Type   | Description                                                 |
+| ----------- | ------ | ----------------------------------------------------------- |
+| task        | string | Task title                                                  |
+| due         | string | Due date and time in string of format `3/25/2020, 11:59 PM` |
+| cents       | number | Stakes in cents                                             |
 
 On success, returns the created task.
 

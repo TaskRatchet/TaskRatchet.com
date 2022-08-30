@@ -9,4 +9,4 @@
 
 Still have questions? Send me an email:
 
-**Support:** nathan@taskratchet.com
+**Support:** support@taskratchet.com
