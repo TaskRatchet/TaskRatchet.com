@@ -5,16 +5,20 @@ defineProps<{
   details: string
   link?: string
 }>()
+const is_link = link => link && link.startsWith('http')
 </script>
 
 <template>
-  <a v-if="link" v-bind:href="link">
+  <component :is="is_link ? 'a' : 'div'" v-bind:href="link">
     <article class="VPFeature">
-      <div v-if="icon" class="icon">{{ icon }} hello hello</div>
+      <div v-if="icon" class="icon">{{ icon }}</div>
       <h2 class="title">{{ title }}</h2>
       <p class="details">{{ details }}</p>
+      <!-- <div v-if="is_link" class="link">
+        <VPButton :text="'Learn More'" />
+      </div> -->
     </article>
-  </a>
+  </component>
 </template>
 
 <style scoped>

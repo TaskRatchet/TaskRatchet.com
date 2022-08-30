@@ -26,7 +26,7 @@ use cases than one alone could support.
 ### Why doesn't TaskRatchet have \[feature\]?
 
 TaskRatchet is built and maintained by a single developer, so I may plan to have certain features that I just haven't
-had the time to build yet. Or, maybe I haven't thought of the feature yet! Email me at nathan@taskratchet.com with any
+had the time to build yet. Or, maybe I haven't thought of the feature yet! Email me at support@taskratchet.com with any
 ideas, suggestions, or feedback. I love hearing your ideas!
 
 You can also suggest and vote for ideas [here](https://taskratchet.consider.it/), though I would recommend that you
@@ -59,16 +59,16 @@ are required to add a payment method during the registration process.
 
 ### Does TaskRatchet support PayPal?
 
-No, but email me at nathan@taskratchet.com anyway to let me know you're missing it! I'll probably also ask you where
+No, but email me at support@taskratchet.com anyway to let me know you're missing it! I'll probably also ask you where
 you're located and if there are any other payment methods that might work for you.
 
 ## Account Management
 
 ### How do I unsubscribe from the daily summary emails?
 
-Email me at nathan@taskratchet.com and I can unsubscribe you from the daily emails.
+Email me at support@taskratchet.com and I can unsubscribe you from the daily emails.
 
 ### How can I deactivate or delete my account?
 
-Email me at nathan@taskratchet.com letting me know whether you'd like me to delete or just deactivate your account, and
+Email me at support@taskratchet.com letting me know whether you'd like me to delete or just deactivate your account, and
 I'll get it done as soon as I can.

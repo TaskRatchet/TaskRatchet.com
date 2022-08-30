@@ -16,14 +16,14 @@ In each case, TaskRatchet collects such information only insofar as is necessary
 
 All of the information that is collected on TaskRatchet will be handled in accordance with GDPR legislation.
 
-Information     | Storage and Processing                 | Reason
-----------------|----------------------------------------|---------------------------------------------------
-Name            | Google Cloud Platform                  | Personalization
-Email           | Google Cloud Platfrom                  | Authentication, support, notifications, marketing
-Password        | Google Cloud Platform                  | Authentication
-Payment details | Stripe                                 | To enable the service
-Task metadata   | Google Cloud Platform, Stripe          | To enable the service
-Usage data      | Amplitude, Google Analytics, Highlight | Business intelligence, marketing
+| Information     | Storage and Processing                 | Reason                                            |
+| --------------- | -------------------------------------- | ------------------------------------------------- |
+| Name            | Google Cloud Platform                  | Personalization                                   |
+| Email           | Google Cloud Platfrom                  | Authentication, support, notifications, marketing |
+| Password        | Google Cloud Platform                  | Authentication                                    |
+| Payment details | Stripe                                 | To enable the service                             |
+| Task metadata   | Google Cloud Platform, Stripe          | To enable the service                             |
+| Usage data      | Amplitude, Google Analytics, Highlight | Business intelligence, marketing                  |
 
 ## Protection of Certain Personally-Identifying Information
 
@@ -67,7 +67,7 @@ TaskRatchet user accounts can be edited by following these steps:
 
 If you would like to request access to your account data, please follow these steps:
 
-1.  Send your request to nathan@taskratchet.com from the email address associated with the account.
+1.  Send your request to support@taskratchet.com from the email address associated with the account.
 
 ## Retention of personal information
 
@@ -81,7 +81,7 @@ When deletion is requested or otherwise required, we will anonymise the data of 
 
 If you would like to request deletion of your account and associated data, please follow these steps:
 
-1.  Send your request to nathan@taskratchet.com from the email address associated with the account.
+1.  Send your request to support@taskratchet.com from the email address associated with the account.
 
 ## Rights in relation to your information
 
@@ -117,7 +117,7 @@ TaskRatchet may change its Privacy Policy from time to time, and at TaskRatchetâ
 
 ## Contact
 
-Please contact us if you have any questions about our privacy policy or information we hold about you by emailing nathan@taskratchet.com.
+Please contact us if you have any questions about our privacy policy or information we hold about you by emailing support@taskratchet.com.
 
 [See full history of this document](https://github.com/narthur/TaskRatchet.com/commits/master/_pages/privacy.md)
 

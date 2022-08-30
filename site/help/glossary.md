@@ -56,7 +56,7 @@ to be an effective strategy for personal behavior change.
 
 ## Non-Legit
 
-If you complete a task but fail to mark it as complete in TaskRatchet by its deadline, you may send an email to <nathan@taskratchet.com>
+If you complete a task but fail to mark it as complete in TaskRatchet by its deadline, you may send an email to <support@taskratchet.com>
 indicating that the charge was not legit, and the charge will be cancelled or refunded if it has already processed.
 
 - [How It Works](https://docs.taskratchet.com/works.html)
