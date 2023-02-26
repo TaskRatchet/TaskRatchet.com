@@ -8,19 +8,19 @@
 
 Enabling the Beeminder integration gives you three new features:
 
-Feature                                      | Format
----------------------------------------------|----------------------------
-Post all new tasks to Beeminder on creation  | Applies to all new tasks
-Post to Beeminder goal(s) on task creation   | `[Task Name] &[Goal Slug]`
-Post to Beeminder goal(s) on task completion | `[Task Name] *[Goal Slug]`
+| Feature                                      | Format                     |
+| -------------------------------------------- | -------------------------- |
+| Post all new tasks to Beeminder on creation  | Applies to all new tasks   |
+| Post to Beeminder goal(s) on task creation   | `[Task Name] &[Goal Slug]` |
+| Post to Beeminder goal(s) on task completion | `[Task Name] *[Goal Slug]` |
 
 When a task is posted to Beeminder as a new datapoint, the following attributes are set:
 
-Datapoint Field | Value
-----------------|--------------
-Date            | Date task was added, or completed if using `*`-tag
-Value           | Always `1`
-Comment         | Task summary, e.g., `The Task by 3/24/2021, 11:59 PM or pay $10.00`
+| Datapoint Field | Value                                                               |
+| --------------- | ------------------------------------------------------------------- |
+| Date            | Date task was added, or completed if using `*`-tag                  |
+| Value           | Always `1`                                                          |
+| Comment         | Task summary, e.g., `The Task by 3/24/2021, 11:59 PM or pay $10.00` |
 
 #### Examples
 

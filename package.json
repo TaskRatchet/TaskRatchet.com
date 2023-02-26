@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
-    "site:dev": "vitepress dev site",
-    "site:build": "vitepress build site",
-    "site:serve": "vitepress serve site"
+    "dev": "vitepress dev site",
+    "build": "vitepress build site",
+    "serve": "vitepress serve site"
   },
   "keywords": [],
   "author": "",
