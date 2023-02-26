@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as t,a}from"./app.d459dfc6.js";const f=JSON.parse('{"title":"Transparency","description":"","frontmatter":{},"headers":[],"relativePath":"help/transparency.md"}'),n={name:"help/transparency.md"},o=a("",2),s=[o];function c(i,p,l,_,h,d){return t(),r("div",null,s)}var u=e(n,[["render",c]]);export{f as __pageData,u as default};
