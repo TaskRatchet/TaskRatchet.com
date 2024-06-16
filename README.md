@@ -2,5 +2,5 @@
 
 ```bash
 pnpm install
-pnpm run site:dev
+pnpm run dev
 ```

@@ -3,7 +3,7 @@ services:
     name: TaskRatchet.com
     runtime: static
     buildCommand: npm i -g pnpm && pnpm i && pnpm run build
-    staticPublishPath: ./site/.vitepress/dist
+    staticPublishPath: ./.vitepress/dist
     pullRequestPreviewsEnabled: true
     envVars:
       - key: SKIP_INSTALL_DEPS
