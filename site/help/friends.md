@@ -10,6 +10,8 @@ In addition to the services on this page, Beeminder has been keeping a similar l
 
 ## Commitment Contracts
 
+- [Amazing Marvin](https://amazingmarvin.com/) - "Marvin incorporates principles from behavioral psychology to help you
+  beat procrastination, feel in control and finish your to-do list." Now with monetary stakes. [[1](https://www.loom.com/share/da04a5b9457c40aebc240b302419c053?sid=53787d76-ebd1-4e9a-ac02-1f9cb06fc48b), [2](https://community.amazingmarvin.com/changelog), [3](https://forum.beeminder.com/t/amazing-marvin-has-pledges-now/11641)]
 - [Beeminder](https://www.beeminder.com/home) - "Your goals can be anything quantifiable — weight, pushups, minutes
   spent on Facebook, points on Duolingo. Answer with your number when Beeminder asks — or connect a device/app below to
   auto-report — and we'll show your progress and a Yellow Brick Road to follow to stay on track. If you go off track, you
