@@ -25,18 +25,18 @@ use cases than one alone could support.
 
 ### Why doesn't TaskRatchet have \[feature\]?
 
-TaskRatchet is built and maintained by a single developer, so I may plan to have certain features that I just haven't
-had the time to build yet. Or, maybe I haven't thought of the feature yet! Email me at support@taskratchet.com with any
-ideas, suggestions, or feedback. I love hearing your ideas!
+TaskRatchet is built and maintained by two part-time developers, so we may plan to have certain features that we just haven't
+had the time to build yet. Or, maybe we haven't thought of the feature yet! Email us at support@taskratchet.com with any
+ideas, suggestions, or feedback. We love hearing your ideas!
 
-You can also suggest and vote for ideas [here](https://taskratchet.consider.it/), though I would recommend that you
-also email me, since I keep a separate record of missing features and the users who want them.
+You can also suggest and vote for ideas [here](https://taskratchet.consider.it/), though we would recommend that you
+also email us, since we keep a separate record of missing features and the users who want them.
 
 ## Payments
 
 ### Is TaskRatchet free?
 
-Yes! TaskRatchet is free to use forever. You will only be charged if you don't complete a task you've added by the
+Yes! TaskRatchet is entirely free to use. You will only be charged if you don't complete a task you've added by the
 deadline you chose.
 
 ### Why does TaskRatchet need my payment details?
@@ -48,8 +48,8 @@ the deadlines you've set.
 ### When does TaskRatchet charge me?
 
 Soon after you miss a deadline, TaskRatchet will email you letting you know you're about to be charged, and a
-charge will appear in your bank account. You can reply to this email to pause the charge and let me know that the charge
-isn't legit. Once I've canceled a charge, it will disappear from your bank account.
+charge will appear in your bank account. You can reply to this email to pause the charge and let us know that the charge
+isn't legit. Once we've canceled the charge, it will disappear from your bank account.
 
 ### Can I try TaskRatchet out without adding my payment details?
 
@@ -59,7 +59,7 @@ are required to add a payment method during the registration process.
 
 ### Does TaskRatchet support PayPal?
 
-No, but email me at support@taskratchet.com anyway to let me know you're missing it! I'll probably also ask you where
+No, but send an email to support@taskratchet.com anyway to let us know you wish we did! Also include where
 you're located and if there are any other payment methods that might work for you.
 
 ## Account Management

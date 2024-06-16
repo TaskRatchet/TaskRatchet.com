@@ -2,6 +2,13 @@
 
 This privacy policy describes how TaskRatchet uses and protects any information that you give us. We are committed to ensuring that your privacy is protected. If you provide us with personal information through TaskRatchet, you can be assured that it will only be used in accordance with this privacy statement.
 
+This privacy policy applies to the website and all products and services offered by TaskRatchet.
+
+- https://taskratchet.com
+- https://app.taskratchet.com
+- https://api.taskratchet.com
+- TaskRatchet mobile apps
+
 ## Website Visitors
 
 Like most websites, TaskRatchet collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. TaskRatchet’s purpose in collecting non-personally identifying information is to better understand how TaskRatchet’s visitors use its website. From time to time, TaskRatchet may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.
@@ -16,14 +23,14 @@ In each case, TaskRatchet collects such information only insofar as is necessary
 
 All of the information that is collected on TaskRatchet will be handled in accordance with GDPR legislation.
 
-| Information     | Storage and Processing                 | Reason                                            |
-| --------------- | -------------------------------------- | ------------------------------------------------- |
-| Name            | Google Cloud Platform                  | Personalization                                   |
-| Email           | Google Cloud Platfrom                  | Authentication, support, notifications, marketing |
-| Password        | Google Cloud Platform                  | Authentication                                    |
-| Payment details | Stripe                                 | To enable the service                             |
-| Task metadata   | Google Cloud Platform, Stripe          | To enable the service                             |
-| Usage data      | Amplitude, Google Analytics, Highlight | Business intelligence, marketing                  |
+| Information     | Storage and Processing                                                     | Reason                                            |
+| --------------- | -------------------------------------------------------------------------- | ------------------------------------------------- |
+| Name            | Google Cloud Platform                                                      | Personalization                                   |
+| Email           | Google Cloud Platfrom                                                      | Authentication, support, notifications, marketing |
+| Password        | Google Cloud Platform                                                      | Authentication                                    |
+| Payment details | Stripe                                                                     | To enable the service                             |
+| Task metadata   | Google Cloud Platform, Stripe                                              | To enable the service                             |
+| Usage data      | Amplitude, Google Analytics, Highlight, Apple App Store, Google Play Store | Business intelligence, marketing, app publishing  |
 
 ## Protection of Certain Personally-Identifying Information
 
@@ -43,17 +50,17 @@ We will not sell or lease your personal information to third parties unless we h
 
 We would like to send you email marketing communication which may be of interest to you from time to time. If you have consented to marketing, you may opt out later.
 
-You have a right at any time to stop us from contacting you for marketing purposes. If you no longer wish to be contacted for marketing purposes, please click on the unsubscribe link at the bottom of the email.
+You have a right at any time to stop us from contacting you for marketing purposes. If you no longer wish to be contacted for marketing purposes, please click on the unsubscribe link at the bottom of the email, or email us at support@taskratchet.com to request that we unsubscribe you.
 
 ## Legal grounds for processing personal information
 
 We rely on one or more of the following processing conditions:
 
--   our legitimate interests in the effective delivery of information and services to you;
+- our legitimate interests in the effective delivery of information and services to you;
 
--   explicit consent that you have given;
+- explicit consent that you have given;
 
--   legal obligations.
+- legal obligations.
 
 ## Access to data
 
@@ -87,25 +94,25 @@ If you would like to request deletion of your account and associated data, pleas
 
 You may have certain rights under data protection law in relation to the personal information we hold about you. In particular, you may have a right to:
 
--   request a copy of personal information we hold about you;
+- request a copy of personal information we hold about you;
 
--   ask that we update the personal information we hold about you, or independently correct such personal information that you think is incorrect or incomplete;
+- ask that we update the personal information we hold about you, or independently correct such personal information that you think is incorrect or incomplete;
 
--   ask that we delete personal information that we hold about you from live systems, or restrict the way in which we use such personal information (for information on deletion from archives, see the “Retention of personal information” section);
+- ask that we delete personal information that we hold about you from live systems, or restrict the way in which we use such personal information (for information on deletion from archives, see the “Retention of personal information” section);
 
--   object to our processing of your personal information; and/or
+- object to our processing of your personal information; and/or
 
--   withdraw your consent to our processing of your personal information (to the extent such processing is based on consent and consent is the only permissible basis for processing).
+- withdraw your consent to our processing of your personal information (to the extent such processing is based on consent and consent is the only permissible basis for processing).
 
 If you would like to exercise these rights or understand if these rights apply to you, please follow the instructions at the end of this Privacy statement.
 
 ## Third Party Links
 
-Our website may contain links to other websites provided by third parties not under our control. When following a link and providing information to a 3rd-party website, please be aware that we are not responsible for the data provided to that third party. This privacy policy only applies to the websites listed at the beginning of this document, so when you visit other websites, you should read their own privacy policies.
+Our websites and apps may contain links to other websites provided by third parties not under our control. When following a link and providing information to a 3rd-party website, please be aware that we are not responsible for the data provided to that third party. This privacy policy only applies to the websites and apps listed at the beginning of this document, so when you visit other websites, you should read their own privacy policies.
 
 ## Aggregated Statistics
 
-TaskRatchet may collect statistics about the behavior of visitors to its websites. For instance, TaskRatchet may reveal how many tasks were created and what percentage were completed, based on data gathered by the TaskRatchet API, a web service used by TaskRatchet clients. However, TaskRatchet does not disclose personally-identifying information other than as described in this policy.
+TaskRatchet may collect statistics about the behavior of visitors to its websites and apps. For instance, TaskRatchet may reveal how many tasks were created and what percentage were completed, based on data gathered by the TaskRatchet API, a web service used by TaskRatchet clients. However, TaskRatchet does not disclose personally-identifying information other than as described in this policy.
 
 ## Cookies
 
@@ -119,11 +126,18 @@ TaskRatchet may change its Privacy Policy from time to time, and at TaskRatchet�
 
 Please contact us if you have any questions about our privacy policy or information we hold about you by emailing support@taskratchet.com.
 
-[See full history of this document](https://github.com/narthur/TaskRatchet.com/commits/master/_pages/privacy.md)
-
 Adapted from [WordPress.org's privacy policy](https://wordpress.org/about/privacy/), licensed CC-BY-SA.
 
 ## Changelog
 
-- June 16, 2022: Added changelog
-- June 16, 2022: Added Highlight to list of storage and processing services
+- 2022-06-16: Added changelog
+- 2022-06-16: Added Highlight to list of storage and processing services
+- 2024-01-05: Added Google Play Store and Apple App Store to list of third-party processors
+- 2024-01-05: Converted dates in changelog to YYYY-MM-DD format
+- 2024-01-05: Added support email to instructions on unsubscribing from marketing emails
+- 2024-01-05: Added references to our apps to the "Third Party Links" section
+- 2024-01-05: Added list of websites and apps covered by this privacy policy to the beginning of the document
+- 2024-01-05: Updated link to full history of this document
+- 2024-01-05: Moved link to full document history to after the changelog
+
+[See full history of this document](https://github.com/TaskRatchet/clients/commits/main/apps/TaskRatchet.com/site/privacy.md)

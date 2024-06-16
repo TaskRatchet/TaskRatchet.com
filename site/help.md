@@ -7,6 +7,6 @@
 
 ## Support
 
-Still have questions? Send me an email:
+Still have questions? Send us an email:
 
 **Support:** support@taskratchet.com

@@ -1,10 +1,10 @@
 {
-  "name": "TaskRatchet.com",
+  "name": "taskratchet.com",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
     "dev": "vitepress dev site",
     "build": "vitepress build site",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "vitepress": "1.0.2",
+    "vue": "^3.4.21"
   },
   "private": true
 }

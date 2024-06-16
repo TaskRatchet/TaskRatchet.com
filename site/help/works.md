@@ -1,16 +1,16 @@
 # How It Works
 
-TaskRatchet is the only todo list that makes you do the tasks you add. 
+TaskRatchet is the only todo list that makes you do the tasks you add.
 
 ## Add a Task
 
 When adding a task, TaskRatchet asks you for three pieces of information:
 
-- **Task:** The definition of the task--what is it you need to do?
+- **Task:** The definition of the task—what is it you need to do?
 - **Deadline:** A deadline, specified as a date and time.
 - **Stakes:** The amount of money you'll be charged if you don't complete it in time.
 
-In addition, you can create multiple tasks at the same time--all with the same deadline and stakes--by entering one task per line 
+In addition, you can create multiple tasks at the same time—all with the same deadline and stakes—by entering one task per line
 in the task field. Each line will be created as its own task.
 
 ![FVYKEaUXsAIdwTd](https://user-images.githubusercontent.com/4655422/179230689-1a697e39-5cef-49ad-b854-aa1b463b2516.jpeg)
@@ -50,4 +50,4 @@ Even if your reason isn't listed above, go ahead and email me, including the rea
 
 The preferred way to call not legit on a charge is to reply directly to the email telling you you're getting charged. By
 doing this, the charge is automatically paused until I can respond to you. Once we've agreed that your charge should be
-cancelled, I'll go ahead and cancel the charge, or, if it's already been finalized, I'll issue you a refund.
+cancelled, we'll go ahead and cancel the charge, or, if it's already been finalized, we'll issue you a refund.
