@@ -82,7 +82,7 @@ Example response:
 | new_password | string | New password                                           |
 | integrations | object | User's integration settings; currently only Beeminder  |
 
-Response is the updated user object--see `GET me`.
+Response is the updated user object—see `GET me`.
 
 ### `GET me/tasks`
 
