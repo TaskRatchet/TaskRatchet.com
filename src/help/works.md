@@ -21,7 +21,7 @@ Currently, the only reminder that TaskRatchet has is a daily summary email which
 completed. This email is not sent if you don't currently have any outstanding tasks.
 
 Daily emails are almost certainly not the optimal solution for reminders. If you have opinions regarding how reminders should work,
-please email me at support@taskratchet.com. The more feedback I can get on how people would like reminders to work, the better!
+please send an email to support@taskratchet.com. The more feedback we can get on how people would like reminders to work, the better!
 
 ## Complete the Task
 
@@ -32,11 +32,11 @@ for that task.
 
 If you don't mark the task as complete on time, a series of events are triggered within specific time periods after the task's deadline:
 
-| Window        | Event                                                                                     | Calling Not-Legit                                                                                   |
-| ------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **0-6 hrs**   | TaskRatchet sends you a charge notification email.                                        | Reply direclty to the charge email to pause the charge until I can respond.                         |
-| **24-30 hrs** | TaskRatchet initiates a charge which will appear in your bank without removing the money. | If you email me in time, I can cancel the charge without any funds being removed from your account. |
-| **48-54 hrs** | TaskRatchet removes the money from your bank.                                             | Calling not-legit at this point will result in a refund.                                            |
+| Window        | Event                                                                                     | Calling Not-Legit                                                                                    |
+| ------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **0-6 hrs**   | TaskRatchet sends you a charge notification email.                                        | Reply direclty to the charge email to pause the charge until we can respond.                         |
+| **24-30 hrs** | TaskRatchet initiates a charge which will appear in your bank without removing the money. | If you email us in time, we can cancel the charge without any funds being removed from your account. |
+| **48-54 hrs** | TaskRatchet removes the money from your bank.                                             | Calling not-legit at this point will result in a refund.                                             |
 
 ## Calling a Charge Not Legit
 
@@ -46,10 +46,10 @@ Depending on the situation, you may feel that a particular charge isn't legit. R
 - You included a condition for discarding the task in its description.
 - You have some rules defined externally for when a charge should not be considered legitimate.
 
-Even if your reason isn't listed above, go ahead and email me, including the reason you're calling not legit.
+Even if your reason isn't listed above, go ahead and email us, including the reason you're calling not legit.
 
-The preferred way to call not legit on a charge is to reply directly to 
-the email telling you you're getting charged. This way the charge is 
-automatically paused until we can respond to you. Once we've agreed that 
-your charge should be cancelled, we'll go ahead and cancel the charge, 
+The preferred way to call not legit on a charge is to reply directly to
+the email telling you you're getting charged. This way the charge is
+automatically paused until we can respond to you. Once we've agreed that
+your charge should be cancelled, we'll go ahead and cancel the charge,
 or, if it's already been finalized, we'll issue you a refund.
