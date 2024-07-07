@@ -12,7 +12,7 @@ letting you define your tasks and check them off when they are done.
 First, [TaskRatchet and Beeminder go great together](https://www.beeminder.com/taskratchet), so definitely check out
 [our Beeminder integration](https://taskratchet.com/help/integrations.html#beeminder).
 
-[Beeminder](https://www.beeminder.com/home) and TaskRatchet are quite similar--they are both tools for committing yourself
+[Beeminder](https://www.beeminder.com/home) and TaskRatchet are quite similar—they are both tools for committing yourself
 to future behaviors by putting money on the line. However they differ in several ways:
 
 1. TaskRatchet has a very simple todo list interface, whereas Beeminder exposes a much more complex and powerful user interface.
@@ -66,9 +66,9 @@ you're located and if there are any other payment methods that might work for yo
 
 ### How do I unsubscribe from the daily summary emails?
 
-Email me at support@taskratchet.com and I can unsubscribe you from the daily emails.
+Send an email to support@taskratchet.com and we'll unsubscribe you from the daily emails.
 
 ### How can I deactivate or delete my account?
 
-Email me at support@taskratchet.com letting me know whether you'd like me to delete or just deactivate your account, and
-I'll get it done as soon as I can.
+Send an email to support@taskratchet.com letting us know whether you'd like us to delete or just deactivate your account, and
+we'll get it done as soon as we can.

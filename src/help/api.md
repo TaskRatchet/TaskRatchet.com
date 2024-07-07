@@ -5,9 +5,9 @@ This version of the API is stable. Future features will be added in a second, ye
 :::
 
 TaskRatchet has an API you can use to list, update, and create new tasks, among other things.
-Unfortunately, the API is not yet stable enough for me to prioritize documenting it publicly.
+Unfortunately, the API is not yet stable enough to prioritize documenting it publicly.
 If you would like more information regaring how you can use TaskRatchet's API, or you find
-anything in this document that seems inaccurate, please email me at <support@taskratchet.com>.
+anything in this document that seems inaccurate, please send an email to <support@taskratchet.com>.
 
 You can find your API user ID and token in your account settings.
 
@@ -58,17 +58,17 @@ Example response:
 
 ```json
 {
-    "id": "Zu0qDVncIgSuUbQfr261",
-    "name": "Jon Doe",
-    "email": "jon@doe.com",
-    "timezone": "America/New_York",
-    "cards": [],
-    "integrations": {
-        "beeminder": {
-            "user": "jondoe",
-            "goal_new_tasks": "tr_tasks"
-        }
+  "id": "Zu0qDVncIgSuUbQfr261",
+  "name": "Jon Doe",
+  "email": "jon@doe.com",
+  "timezone": "America/New_York",
+  "cards": [],
+  "integrations": {
+    "beeminder": {
+      "user": "jondoe",
+      "goal_new_tasks": "tr_tasks"
     }
+  }
 }
 ```
 
@@ -82,12 +82,11 @@ Example response:
 | new_password | string | New password                                           |
 | integrations | object | User's integration settings; currently only Beeminder  |
 
-Response is the updated user object--see `GET me`.
+Response is the updated user object—see `GET me`.
 
 ### `GET me/tasks`
 
-Returns an array of tasks. Currently it returns all tasks ever associated with the user. In the future
-I hope to update it to be paginated and filterable.
+Returns an array of tasks. Currently it returns all tasks ever associated with the user.
 
 | Task Field    | Type    | Description                                                                                                                                   |
 | ------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,16 +103,16 @@ Example response:
 
 ```json
 [
-    {
-        "id": "tdDPzh1GpZHAGZURVBf6",
-        "task": "Take out the trash",
-        "due": "2/21/2022, 11:59 PM",
-        "due_timestamp": 1645505940,
-        "cents": 500,
-        "complete": false,
-        "status": "pending",
-        "timezone": "America/Cancun"
-    }
+  {
+    "id": "tdDPzh1GpZHAGZURVBf6",
+    "task": "Take out the trash",
+    "due": "2/21/2022, 11:59 PM",
+    "due_timestamp": 1645505940,
+    "cents": 500,
+    "complete": false,
+    "status": "pending",
+    "timezone": "America/Cancun"
+  }
 ]
 ```
 
@@ -131,14 +130,14 @@ Example response:
 
 ```json
 {
-    "id": "tdDPzh1GpZHAGZURVBf6",
-    "task": "Take out the trash",
-    "due": "2/21/2022, 11:59 PM",
-    "due_timestamp": 1645505940,
-    "cents": 500,
-    "complete": false,
-    "status": "pending",
-    "timezone": "America/Cancun"
+  "id": "tdDPzh1GpZHAGZURVBf6",
+  "task": "Take out the trash",
+  "due": "2/21/2022, 11:59 PM",
+  "due_timestamp": 1645505940,
+  "cents": 500,
+  "complete": false,
+  "status": "pending",
+  "timezone": "America/Cancun"
 }
 ```
 
@@ -150,14 +149,14 @@ Example respone:
 
 ```json
 {
-    "id": "tdDPzh1GpZHAGZURVBf6",
-    "task": "Take out the trash",
-    "due": "2/21/2022, 11:59 PM",
-    "due_timestamp": 1645505940,
-    "cents": 500,
-    "complete": false,
-    "status": "pending",
-    "timezone": "America/Cancun"
+  "id": "tdDPzh1GpZHAGZURVBf6",
+  "task": "Take out the trash",
+  "due": "2/21/2022, 11:59 PM",
+  "due_timestamp": 1645505940,
+  "cents": 500,
+  "complete": false,
+  "status": "pending",
+  "timezone": "America/Cancun"
 }
 ```
 
@@ -169,7 +168,7 @@ Example response:
 
 ```json
 {
-    "utc_now": "2022-07-12T18:52:41.647995+00:00"
+  "utc_now": "2022-07-12T18:52:41.647995+00:00"
 }
 ```
 
