@@ -140,4 +140,4 @@ Adapted from [WordPress.org's privacy policy](https://wordpress.org/about/privac
 - 2024-01-05: Updated link to full history of this document
 - 2024-01-05: Moved link to full document history to after the changelog
 
-[See full history of this document](https://github.com/TaskRatchet/clients/commits/main/apps/TaskRatchet.com/site/privacy.md)
+[See full history of this document](https://github.com/TaskRatchet/TaskRatchet.com/commits/master/src/privacy.md)
