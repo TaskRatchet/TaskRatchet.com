@@ -23,14 +23,14 @@ In each case, TaskRatchet collects such information only insofar as is necessary
 
 All of the information that is collected on TaskRatchet will be handled in accordance with GDPR legislation.
 
-| Information     | Storage and Processing                                                     | Reason                                            |
-| --------------- | -------------------------------------------------------------------------- | ------------------------------------------------- |
-| Name            | Google Cloud Platform                                                      | Personalization                                   |
-| Email           | Google Cloud Platfrom                                                      | Authentication, support, notifications, marketing |
-| Password        | Google Cloud Platform                                                      | Authentication                                    |
-| Payment details | Stripe                                                                     | To enable the service                             |
-| Task metadata   | Google Cloud Platform, Stripe                                              | To enable the service                             |
-| Usage data      | Amplitude, Google Analytics, Highlight, Apple App Store, Google Play Store | Business intelligence, marketing, app publishing  |
+| Information     | Storage and Processing                                                                | Reason                                                                   |
+| --------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Name            | Google Cloud Platform                                                                 | Personalization                                                          |
+| Email           | Google Cloud Platfrom                                                                 | Authentication, support, notifications, marketing                        |
+| Password        | Google Cloud Platform                                                                 | Authentication                                                           |
+| Payment details | Stripe                                                                                | To enable the service                                                    |
+| Task metadata   | Google Cloud Platform, Stripe                                                         | To enable the service                                                    |
+| Usage data      | Amplitude, Google Analytics, Highlight, Apple App Store, Google Play Store, Honeycomb | Business intelligence, marketing, app publishing, software observability |
 
 ## Protection of Certain Personally-Identifying Information
 
@@ -139,5 +139,6 @@ Adapted from [WordPress.org's privacy policy](https://wordpress.org/about/privac
 - 2024-01-05: Added list of websites and apps covered by this privacy policy to the beginning of the document
 - 2024-01-05: Updated link to full history of this document
 - 2024-01-05: Moved link to full document history to after the changelog
+- 2024-07-11: Added Honeycomb to list of storage and processing services
 
 [See full history of this document](https://github.com/TaskRatchet/TaskRatchet.com/commits/master/src/privacy.md)
