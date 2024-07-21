@@ -51,5 +51,5 @@ Even if your reason isn't listed above, go ahead and email us, including the rea
 The preferred way to call not legit on a charge is to reply directly to
 the email telling you you're getting charged. This way the charge is
 automatically paused until we can respond to you. Once we've agreed that
-your charge should be cancelled, we'll go ahead and cancel the charge,
+your charge should be cancelled, we'll go ahead and cancel the charge;
 or, if it's already been finalized, we'll issue you a refund.
