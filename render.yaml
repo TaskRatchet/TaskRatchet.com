@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: TaskRatchet.com
+    name: tr.com
     runtime: static
     buildCommand: npm i -g pnpm && pnpm i && pnpm run build
     staticPublishPath: ./.vitepress/dist
