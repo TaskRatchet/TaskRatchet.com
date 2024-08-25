@@ -27,7 +27,8 @@ export default defineConfig({
         {
           text: "Documentation",
           items: [
-            { text: "API", link: "/help/api" },
+            { text: "API v1", link: "/help/api-v1" },
+            { text: "API v2", link: "/help/api-v2" },
             { text: "Glossary", link: "/help/glossary" },
             { text: "Integrations", link: "/help/integrations" },
             { text: "Interfaces", link: "/help/interfaces" },
