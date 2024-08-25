@@ -14,6 +14,9 @@ export default defineConfig({
       { text: "Terms", link: "/terms" },
       { text: "Log In", link: "https://app.taskratchet.com/" },
     ],
+    search: {
+      provider: "local",
+    },
     sidebar: {
       "/help": [
         {
@@ -50,6 +53,7 @@ export default defineConfig({
         },
       ],
     },
+    outline: "deep",
     footer: {
       message:
         "Built with ❤️ by <a href='https://ko-fi.com/narthur'>Narthur</a> and <a href='https://pinepeakdigital.com/'>Pine Peak Digital</a>.",

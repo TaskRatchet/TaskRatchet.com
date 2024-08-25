@@ -4,5 +4,5 @@ _site
 .jekyll-metadata
 vendor
 node_modules
-site/.vitepress/dist
-site/.vitepress/cache
+.vitepress/dist
+.vitepress/cache
