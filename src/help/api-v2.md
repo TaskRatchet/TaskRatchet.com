@@ -6,16 +6,21 @@ API and its associated documentation are likely to be incomplete and/or incorrec
 and may change without notice.
 :::
 
-## Schema
+## Authentication
+
+The API uses the Authorization header for authentication. Provide your API v2 token as the value.
+
+```bash
+curl -X GET "https://api.taskratchet.com/api2/me" \
+  -H "Authorization: ApiKey-v2 YOUR_API_TOKEN"
+```
+
+Please note that your existing v1 API token will not work with the v2 API. Currently you'll
+need to email us at <support@taskratchet.com> to receive your v2 API token.
+
+## Endpoints
 
 Base URL: <https://api.taskratchet.com/api2/>
-
-| Endpoint        | Description           |
-| --------------- | --------------------- |
-| `GET me`        | Get your profile data |
-| `DEL me`        | Delete your account   |
-| `GET me/tasks`  | Get all your tasks    |
-| `POST me/tasks` | Create a new task     |
 
 ### `GET me`
 

@@ -1,0 +1,162 @@
+openapi: 3.0.0
+info:
+  title: TaskRatchet API v2
+  version: "2.0"
+  description: |
+    API and its associated documentation are likely to be incomplete and/or incorrect,
+    and may change without notice.
+servers:
+  - url: https://api.taskratchet.com/api2/
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Provide your API v2 token as the value, prefixed with "ApiKey-v2 ". Note that your API v1 token will not work with API v2.
+paths:
+  /me:
+    get:
+      summary: Get account details
+      security:
+        - ApiKeyAuth: []
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The account's unique identifier
+                    example: Zu0qDVncIgSuUbQfr261
+                  name:
+                    type: string
+                    description: User's full name
+                    example: Jon Doe
+                  email:
+                    type: string
+                    description: User's email address
+                    example: jon@example.com
+                  timezone:
+                    type: string
+                    description: User's current account timezone
+                    example: America/New_York
+                  integrations:
+                    type: object
+                    description: User's integration settings; currently only Beeminder
+                    properties:
+                      beeminder:
+                        type: object
+                        properties:
+                          user:
+                            type: string
+                            description: Beeminder username
+                          goal_new_tasks:
+                            type: string
+                            description: Beeminder goal slug for new tasks
+                  has_stripe_customer:
+                    type: boolean
+                    description: Whether the user has a Stripe customer account
+    delete:
+      summary: Delete account
+      description: Delete your account and all associated data. This action is irreversible.
+      security:
+        - ApiKeyAuth: []
+      responses:
+        "204":
+          description: Account deleted
+  /me/tasks:
+    get:
+      summary: Returns an array of tasks. This route is paginated.
+      security:
+        - ApiKeyAuth: []
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: The task's unique identifier
+                      example: tdDPzh1GpZHAGZURVBf6
+                    task:
+                      type: string
+                      description: The task's description
+                      example: Buy milk
+                    due:
+                      type: number
+                      description: Unix timestamp of the task's due date
+                      example: 1614556800
+                    cents:
+                      type: number
+                      description: The task's stakes in cents
+                    complete:
+                      type: boolean
+                      description: Whether the task has been completed
+                      example: false
+                    status:
+                      type: string
+                      description: The task's status (pending, complete, expired)
+                      example: pending
+    post:
+      summary: Create a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                task:
+                  type: string
+                  description: The task's description
+                  example: Buy milk
+                due:
+                  type: number
+                  description: Unix timestamp of the task's due date
+                  example: 1614556800
+                cents:
+                  type: number
+                  description: The task's stakes in cents
+                  example: 100
+      security:
+        - ApiKeyAuth: []
+      responses:
+        "201":
+          description: Task created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The task's unique identifier
+                    example: tdDPzh1GpZHAGZURVBf6
+                  task:
+                    type: string
+                    description: The task's description
+                    example: Buy milk
+                  due:
+                    type: number
+                    description: Unix timestamp of the task's due date
+                    example: 1614556800
+                  cents:
+                    type: number
+                    description: The task's stakes in cents
+                  complete:
+                    type: boolean
+                    description: Whether the task has been completed
+                    example: false
+                  status:
+                    type: string
+                    description: The task's status (pending, complete, expired)
+                    example: pending

@@ -8,14 +8,16 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "vitepress dev .",
     "build": "vitepress build .",
-    "serve": "vitepress serve ."
+    "serve": "vitepress serve .",
+    "generate": "widdershins --customApiKeyValue \"ApiKey-v2 YOUR_API_KEY\" --summary api-v2.yaml -o openapi.md"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "1.3.4",
-    "vue": "^3.4.38"
+    "vue": "^3.4.38",
+    "widdershins": "^4.0.1"
   },
   "private": true
 }
