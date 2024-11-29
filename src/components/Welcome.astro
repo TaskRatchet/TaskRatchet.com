@@ -1,17 +1,11 @@
 ---
 import background from "../assets/background.svg";
 import Card from "./Card.astro";
+import Nav from "./Nav.astro";
 ---
 
 <div class="font-sans">
-  <nav
-    class="bg-white/5 backdrop-blur-md border-b border-solid border-white/10 shadow-lg"
-  >
-    <div class="max-w-4xl mx-auto px-4 flex justify-between items-center h-14">
-      <a href="/" class="font-bold text-white">TaskRatchet</a>
-      <a href="/login" class="text-gray-400 hover:text-white">Login</a>
-    </div>
-  </nav>
+  <Nav />
   <div class="max-w-4xl mx-auto px-4 py-6">
     <img
       class="fixed inset-0 w-full -z-10 blur-[100px]"
