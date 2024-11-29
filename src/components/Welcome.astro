@@ -1,6 +1,7 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
+import Card from "./Card.astro";
 ---
 
 <div class="font-sans">
@@ -43,22 +44,16 @@ import background from "../assets/background.svg";
       </section>
     </main>
     <div class="space-y-12 mt-12">
-      <div
-        id="features"
-        class="box bg-white/30 backdrop-blur-md rounded-xl border border-white/20 p-6 shadow-lg"
-      >
+      <Card id="features">
         <h2 class="text-2xl font-semibold text-white mb-4">How It Works</h2>
         <p class="leading-relaxed text-gray-300">
           1. Tell us what you want to accomplish<br />
           2. Choose how much to stake (it's up to you!)<br />
           3. Get it done and keep your money 🎉
         </p>
-      </div>
+      </Card>
 
-      <div
-        id="accountability"
-        class="box bg-white/30 backdrop-blur-md rounded-xl border border-white/20 p-6 shadow-lg"
-      >
+      <Card id="accountability">
         <h2>Real Accountability</h2>
         <p>
           We're not just another todo list - we're your accountability partner.
@@ -69,20 +64,14 @@ import background from "../assets/background.svg";
           Completed the task but forgot to check it off? No worries! Just reply
           to the charge notification and we'll cancel the charge for you.
         </p>
-      </div>
+      </Card>
 
-      <div
-        id="integrations"
-        class="box bg-white/30 backdrop-blur-md rounded-xl border border-white/20 p-6 shadow-lg"
-      >
+      <Card id="integrations">
         <h2>Integrations</h2>
         <p>Seamlessly connects with Beeminder to track your goals.</p>
-      </div>
+      </Card>
 
-      <div
-        id="team"
-        class="box bg-white/30 backdrop-blur-md rounded-xl border border-white/20 p-6 shadow-lg"
-      >
+      <Card id="team">
         <h2>Our Team</h2>
         <div class="space-y-6 mt-4">
           <div>
@@ -107,17 +96,15 @@ import background from "../assets/background.svg";
             </p>
           </div>
         </div>
-      </div>
+      </Card>
 
-      <div
-        class="box bg-white/30 backdrop-blur-md rounded-xl border border-white/20 p-6 shadow-lg"
-      >
+      <Card>
         <h2>Gain calmness and clarity with real accountability</h2>
         <a
           class="text-white px-3 py-2.5 rounded-lg bg-gradient-to-r from-[#3245ff] to-[#bc52ee] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.12),inset_0_-2px_0_rgba(0,0,0,0.24)] hover:shadow-none transition-shadow inline-block mt-4"
           href="#signup">Try It Free</a
         >
-      </div>
+      </Card>
     </div>
   </div>
 </div>
