@@ -3,15 +3,15 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
+<div class="h-full font-sans">
+	<img class="fixed inset-0 w-full h-full -z-10 blur-[100px]" src={background.src} alt="" fetchpriority="high" />
+	<main class="h-full flex justify-center">
+		<section class="flex flex-col justify-center p-4">
 			<h1>Put Money on Your Goals</h1>
 			<p class="tagline">TaskRatchet helps you stay accountable by putting a price on procrastination. Set deadlines, commit money, and get things done.</p>
-			<section id="links">
+			<section class="flex gap-4">
 				<a class="button" href="#signup">Try It Free</a>
-				<a href="#how-it-works">How It Works</a>
+				<a class="text-gray-900 hover:text-gray-600 flex items-center px-3 py-2.5 no-underline transition-colors" href="#how-it-works">How It Works</a>
 			</section>
 		</section>
 	</main>
