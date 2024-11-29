@@ -43,7 +43,7 @@ import Card from "./Card.astro";
         </section>
       </section>
     </main>
-    <div class="space-y-12 mt-12">
+    <div class="space-y-6 mt-12">
       <Card id="features">
         <h2 class="text-2xl font-semibold text-white mb-4">How It Works</h2>
         <p class="leading-relaxed text-gray-300">
@@ -71,32 +71,32 @@ import Card from "./Card.astro";
         <p>Seamlessly connects with Beeminder to track your goals.</p>
       </Card>
 
-      <Card id="team">
+      <div id="team">
         <h2>Our Team</h2>
-        <div class="space-y-6 mt-4">
-          <div>
+        <div class="mt-4 grid grid-cols-3 gap-4">
+          <Card>
             <h3 class="font-medium mb-2">Nathan Arthur - Founder</h3>
             <p>
               Built TaskRatchet to make it easier to make monetary commitments
               on one-off tasks. Active in the Beeminder community since 2018.
             </p>
-          </div>
-          <div>
+          </Card>
+          <Card>
             <h3 class="font-medium mb-2">Nicky - Customer Support</h3>
             <p>
               Keeps the inbox squeaky-clean and has improved customer support by
               several orders of magnitude since late 2022.
             </p>
-          </div>
-          <div>
+          </Card>
+          <Card>
             <h3 class="font-medium mb-2">Luke Arthur - Developer</h3>
             <p>
               Joined to create TaskRatchet's mobile apps. Brings an engineering
               mindset and love of learning to push TaskRatchet forward.
             </p>
-          </div>
+          </Card>
         </div>
-      </Card>
+      </div>
 
       <Card>
         <h2>Gain calmness and clarity with real accountability</h2>
