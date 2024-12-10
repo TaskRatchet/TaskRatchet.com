@@ -45,11 +45,19 @@ TaskRatchet allows you to commit to completing tasks by a deadline. If you don't
 the amount you pledged on the task. Without your payment details, TaskRatchet isn't effective at ensuring you meet
 the deadlines you've set.
 
+### What payment methods does TaskRatchet accept?
+
+TaskRatchet accepts most major credit and debit cards. We process payments through Stripe, a secure payment processor.
+
 ### When does TaskRatchet charge me?
 
 Soon after you miss a deadline, TaskRatchet will email you letting you know you're about to be charged, and a
 charge will appear in your bank account. You can reply to this email to pause the charge and let us know that the charge
 isn't legit. Once we've canceled the charge, it will disappear from your bank account.
+
+### What happens if I'm charged by mistake?
+
+If you completed your task but forgot to mark it complete, or if you believe you were charged in error, reply to the charge notification email. We can cancel charges that haven't been finalized or issue refunds for completed charges.
 
 ### Can I try TaskRatchet out without adding my payment details?
 
