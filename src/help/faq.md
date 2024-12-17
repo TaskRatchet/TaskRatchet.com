@@ -4,8 +4,7 @@
 
 ### What does TaskRatchet do?
 
-TaskRatchet lets you commit money on completing one-off tasks by deadlines you set. It acts like a simple todo list,
-letting you define your tasks and check them off when they are done.
+TaskRatchet is a todo list where you stake money on completing tasks by deadlines. Define your task, set your deadline, and choose your stakes. If you miss the deadline, you pay the amount you staked.
 
 ### How is TaskRatchet different from Beeminder?
 
@@ -36,8 +35,7 @@ also email us, since we keep a separate record of missing features and the users
 
 ### Is TaskRatchet free?
 
-Yes! TaskRatchet is entirely free to use. You will only be charged if you don't complete a task you've added by the
-deadline you chose.
+Yes! TaskRatchet is free to use. You only pay when you miss a deadline.
 
 ### Why does TaskRatchet need my payment details?
 
