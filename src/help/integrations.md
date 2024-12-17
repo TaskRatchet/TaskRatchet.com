@@ -6,45 +6,21 @@
 
 ### Features
 
-Enabling the Beeminder integration gives you three new features:
+The Beeminder integration lets you track your TaskRatchet activity in Beeminder. You can:
 
-| Feature                                      | Format                     |
-| -------------------------------------------- | -------------------------- |
-| Post all new tasks to Beeminder on creation  | Applies to all new tasks   |
-| Post to Beeminder goal(s) on task creation   | `[Task Name] &[Goal Slug]` |
-| Post to Beeminder goal(s) on task completion | `[Task Name] *[Goal Slug]` |
+1. Send all new tasks to your default Beeminder goal
+2. Send specific tasks to specific goals using `&[goal]` in the task name
+3. Send task completions to goals using `*[goal]` in the task name
 
-When a task is posted to Beeminder as a new datapoint, the following attributes are set:
+Examples:
+- `Buy groceries` - Sends to your default goal when created
+- `Buy groceries &shopping` - Also sends to your "shopping" goal when created  
+- `Buy groceries *shopping` - Sends to your "shopping" goal when completed
 
-| Datapoint Field | Value                                                               |
-| --------------- | ------------------------------------------------------------------- |
-| Date            | Date task was added, or completed if using `*`-tag                  |
-| Value           | Always `1`                                                          |
-| Comment         | Task summary, e.g., `The Task by 3/24/2021, 11:59 PM or pay $10.00` |
-
-#### Examples
-
-> Go shopping
-
-On **creation** of the task, the default Beeminder goal you specified in your settings will receive a datapoint of 1.
-
-> Go shopping &shopping
-
-On **creation** of the task, your `shopping` Beeminder goal will receive a datapoint of 1, in addition to your default goal.
-
-> Go shopping &shopping &chores
-
-On **creation** of the task, your `shopping` and `chores` goals will both receive a datapoint of 1, in addition to your default goal.
-
-> Go shopping \*shopping
-
-On **completion** of the task, your `shopping` Beeminder goal will receive a datapoint of 1. In addition, your default goal will receive a datapoint of 1 when the task was created.
-
-> Go shopping \*shopping &chores
-
-On **creation** of the task, your `chores` Beeminder goal will receive a datapoint of 1, in addition to your default goal.
-
-On **completion** of the task, your `shopping` Beeminder goal will receive a datapoint of 1.
+Each datapoint sent to Beeminder includes:
+- Value: Always 1
+- Date: When the task was created (or completed for *-tags)
+- Comment: Task details including deadline and stakes
 
 #### Enable Beeminder Integration
 
