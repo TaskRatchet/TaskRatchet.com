@@ -11,10 +11,10 @@ import Layout from "../layouts/Layout.astro";
           <span class="site-name">TaskRatchet</span>
         </div>
         <nav>
-          <button 
-            class="theme-toggle" 
-            aria-label="Toggle theme" 
-            id="theme-toggle" 
+          <button
+            class="theme-toggle"
+            aria-label="Toggle theme"
+            id="theme-toggle"
             onclick="
               const html = document.documentElement;
               const currentTheme = html.getAttribute('data-theme') || 
@@ -24,7 +24,16 @@ import Layout from "../layouts/Layout.astro";
               localStorage.setItem('theme', newTheme);
             "
           >
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              class="sun-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -35,11 +44,22 @@ import Layout from "../layouts/Layout.astro";
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg
+              class="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
-          <a href="https://app.taskratchet.com/login" class="button secondary">Sign In</a>
+          <a href="https://app.taskratchet.com/login" class="button secondary"
+            >Sign In</a
+          >
         </nav>
       </div>
     </header>
@@ -237,6 +257,7 @@ import Layout from "../layouts/Layout.astro";
     background: linear-gradient(135deg, var(--gray-50) 0%, white 100%),
       url("/midjourney-a_woman_working_late_into_the_night_at_her_computer.png");
     background-size: cover;
+    background-position: center 55%;
     background-blend-mode: overlay;
     position: relative;
     overflow: hidden;
@@ -246,7 +267,6 @@ import Layout from "../layouts/Layout.astro";
     padding: 1rem 0;
     background: var(--bg-header);
     border-bottom: 1px solid var(--border-color);
-    position: sticky;
     top: 0;
     z-index: 100;
     backdrop-filter: blur(12px);
@@ -506,10 +526,6 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 500;
   }
 
-  .features {
-    padding: 5rem 0;
-  }
-
   .feature {
     max-width: 800px;
     margin: 0 auto 5rem;
@@ -547,7 +563,6 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .how-it-works {
-    padding: 6rem 0;
     text-align: center;
   }
 
@@ -591,10 +606,6 @@ import Layout from "../layouts/Layout.astro";
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
-  .for-who {
-    padding: 4rem 0;
-  }
-
   .for-who h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -621,10 +632,6 @@ import Layout from "../layouts/Layout.astro";
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
-  .team {
-    padding: 4rem 0;
-  }
-
   .team h2 {
     text-align: center;
     margin-bottom: 3rem;
@@ -634,13 +641,12 @@ import Layout from "../layouts/Layout.astro";
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
   }
 
   .team-member {
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    padding: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
     background: var(--card-bg, var(--gray-100));
     border-radius: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -667,8 +673,8 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .team-photo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 2rem;
@@ -725,8 +731,8 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .team-photo {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
     }
   }
 </style>
