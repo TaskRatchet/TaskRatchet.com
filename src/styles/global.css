@@ -15,7 +15,7 @@
   --gray-900: #0f172a; /* Theme tokens */
   --bg-main: white;
   --bg-card: var(--gray-100);
-  --bg-header: rgba(255, 255, 255, 0.85);
+  --bg-header: rgba(255, 255, 255, 0.75);
   --text-primary: var(--gray-800);
   --text-secondary: var(--gray-700);
   --border-color: var(--gray-200);
@@ -28,7 +28,7 @@
 html[data-theme="dark"] {
   --bg-main: var(--gray-900);
   --bg-card: var(--gray-800);
-  --bg-header: rgba(15, 23, 42, 0.85);
+  --bg-header: rgba(15, 23, 42, 0.75);
   --text-primary: var(--gray-50);
   --text-secondary: var(--gray-200);
   --border-color: var(--gray-800);
@@ -82,5 +82,5 @@ main {
 }
 
 section {
-  padding: 2rem 0;
+  padding-top: 3.5rem;
 }
