@@ -1,30 +1,25 @@
 # TaskRatchet.com Knowledge
 
 ## Project Overview
-- Documentation site for TaskRatchet built with VitePress
-- Serves as the public-facing website and documentation hub
-
-## Key Technologies
-- VitePress for static site generation
-- Vue.js for interactive components
+- Marketing website for TaskRatchet built with Astro
+- Uses Svelte for interactive components
 - PNPM as package manager
 
 ## Development
 - Run `pnpm install` to install dependencies
 - Run `pnpm run dev` to start development server
 - Run `pnpm run build` to build for production
+- Run `pnpm run preview` to preview production build
 
 ## Project Structure
 - `/src` - Main content directory
-  - `/help` - Documentation and help articles
-  - `/public` - Static assets
-- `/.vitepress` - VitePress configuration and theme customization
+  - `/pages` - Astro pages (file-based routing)
+  - `/layouts` - Reusable layouts
+  - `/components` - Reusable components (Astro and Svelte)
 
-## Style Guidelines
-- Keep documentation clear and concise
-- Use sentence case for headings
-- Include practical examples where possible
-
-## Links
-- [VitePress Documentation](https://vitepress.dev/)
-- [TaskRatchet App](https://app.taskratchet.com)
+## Troubleshooting
+- If PNPM fails with EPERM errors, try:
+  1. Remove node_modules: `rm -rf node_modules`
+  2. Create fresh directory: `mkdir node_modules`
+  3. Set permissions: `chmod 755 node_modules`
+  4. Reinstall: `pnpm install`
