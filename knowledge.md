@@ -54,9 +54,15 @@
 - Apply theme styles to html[data-theme="dark"] instead of using media queries
 - Always provide fallback for when data-theme isn't set
 - Add smooth transitions for theme changes:
-  - Use universal selector for color transitions
-  - Exclude interactive elements that need different transitions
+  - Set transitions on html element instead of universal selector for smoother theme changes
+  - Define transition timing in CSS variables for consistency
   - Keep duration around 0.3s for best UX
+  - Exclude interactive elements from theme transitions
+- Dark mode contrast guidelines:
+  - Use lighter grays (gray-50) for primary text
+  - Keep darker grays (gray-800) for card backgrounds
+  - Maintain consistent card backgrounds across components
+  - Provide specific variables for different text roles (headings, body, etc.)
 
 ## Common Issues
 - If styles flash and disappear, check if they need to be global with `is:global`

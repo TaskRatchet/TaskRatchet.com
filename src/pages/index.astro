@@ -278,9 +278,7 @@ import Layout from "../layouts/Layout.astro";
   .site-name {
     font-weight: 600;
     font-size: 1.25rem;
-    background: linear-gradient(45deg, var(--gray-700), var(--gray-800));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--logo-text, var(--gray-900));
     letter-spacing: -0.01em;
   }
 
@@ -314,6 +312,11 @@ import Layout from "../layouts/Layout.astro";
     display: none;
   }
 
+  .sun-icon,
+  .moon-icon {
+    display: none;
+  }
+
   html[data-theme="dark"] .sun-icon {
     display: block;
   }
@@ -322,19 +325,14 @@ import Layout from "../layouts/Layout.astro";
     display: block;
   }
 
-  .sun-icon,
-  .moon-icon {
-    display: none;
-  }
-
   @media (prefers-color-scheme: dark) {
-    html:not([data-theme="light"]) .sun-icon {
+    html:not([data-theme]) .sun-icon {
       display: block;
     }
   }
 
   @media (prefers-color-scheme: light) {
-    html:not([data-theme="dark"]) .moon-icon {
+    html:not([data-theme]) .moon-icon {
       display: block;
     }
   }
@@ -518,7 +516,7 @@ import Layout from "../layouts/Layout.astro";
     text-align: center;
     padding: 2rem;
     border-radius: 1rem;
-    background: var(--gray-100);
+    background: var(--card-bg, var(--gray-100));
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
   }
@@ -534,7 +532,7 @@ import Layout from "../layouts/Layout.astro";
 
   .feature h2 {
     font-size: 1.75rem;
-    color: var(--gray-900);
+    color: var(--heading-text, var(--gray-900));
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -543,7 +541,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .feature p {
-    color: var(--gray-700);
+    color: var(--feature-text, var(--gray-700));
     line-height: 1.7;
     font-size: 1.125rem;
   }
@@ -551,6 +549,11 @@ import Layout from "../layouts/Layout.astro";
   .how-it-works {
     padding: 6rem 0;
     text-align: center;
+  }
+
+  .how-it-works h2 {
+    color: var(--heading-text, var(--gray-900));
+    margin-bottom: 3rem;
   }
 
   .steps {
@@ -562,7 +565,7 @@ import Layout from "../layouts/Layout.astro";
 
   .step {
     padding: 2.5rem;
-    background: var(--gray-100);
+    background: var(--card-bg, var(--gray-100));
     border-radius: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -595,6 +598,7 @@ import Layout from "../layouts/Layout.astro";
   .for-who h2 {
     text-align: center;
     margin-bottom: 3rem;
+    color: var(--heading-text, var(--gray-900));
   }
 
   .personas {
@@ -606,7 +610,7 @@ import Layout from "../layouts/Layout.astro";
   .persona {
     text-align: center;
     padding: 2.5rem;
-    background: var(--gray-100);
+    background: var(--card-bg, var(--gray-100));
     border-radius: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -634,8 +638,10 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .team-member {
-    padding: 2rem;
-    background: var(--gray-100);
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2.5rem;
+    background: var(--card-bg, var(--gray-100));
     border-radius: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -650,13 +656,23 @@ import Layout from "../layouts/Layout.astro";
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
+  .team-member h3 {
+    color: var(--heading-text, var(--gray-900));
+    margin-bottom: 1rem;
+  }
+
+  .team-member p {
+    color: var(--feature-text, var(--gray-700));
+    line-height: 1.7;
+  }
+
   .team-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 2rem;
-    border: 4px solid white;
+    border: 4px solid var(--bg-main);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
@@ -669,6 +685,26 @@ import Layout from "../layouts/Layout.astro";
 
   footer p {
     opacity: 0.9;
+  }
+
+  .step h3 {
+    color: var(--heading-text, var(--gray-900));
+    margin-bottom: 1rem;
+  }
+
+  .step p {
+    color: var(--feature-text, var(--gray-700));
+    line-height: 1.7;
+  }
+
+  .persona h3 {
+    color: var(--heading-text, var(--gray-900));
+    margin-bottom: 1rem;
+  }
+
+  .persona p {
+    color: var(--feature-text, var(--gray-700));
+    line-height: 1.7;
   }
 
   @media (max-width: 768px) {
