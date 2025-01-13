@@ -44,6 +44,21 @@
 - For hero background images:
   - Use background-position to control focal point
   - Prefer cropping less interesting parts of image when aspect ratio changes
+  - Use absolute (not fixed) positioning for overlaid headers to allow scrolling
+
+- Keep styles in component files unless they are truly global
+- Global styles should be limited to:
+  - CSS variables
+  - Reset styles
+  - Base typography
+  - Utility classes (like .container)
+- Use `<style is:global>` for styles that need to apply across multiple elements
+- Use regular `<style>` for component-specific styles that should be scoped
+- Set base background color on `main` element, only override for specific sections
+- Use gray-100 for card backgrounds to ensure sufficient contrast against white
+- For hero background images:
+  - Use background-position to control focal point
+  - Prefer cropping less interesting parts of image when aspect ratio changes
 
 - Keep styles in component files unless they are truly global
 - Global styles should be limited to:
