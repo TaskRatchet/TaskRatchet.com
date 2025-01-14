@@ -67,9 +67,11 @@ import Layout from "../layouts/Layout.astro";
     <section class="hero">
       <div class="container">
         <h1>TaskRatchet</h1>
-        <p class="tagline">The Todo List You Won't Ignore</p>
+        <p class="tagline">Your Partner in Getting Things Done</p>
         <p class="description">
-          Take your productivity to the next level—because the stakes are real.
+          Transform your productivity journey with a todo list that truly
+          understands what motivates you. Because sometimes, we all need that
+          extra push.
         </p>
         <div class="cta-buttons">
           <a href="https://app.taskratchet.com/register" class="button primary"
@@ -107,29 +109,30 @@ import Layout from "../layouts/Layout.astro";
           <div class="feature">
             <h2>⚡️ Deadlines with Consequences</h2>
             <p>
-              TaskRatchet is a todo list that charges you real money if you
-              don't complete your tasks on time. Define your task, set your
-              deadline, and choose your stakes. TaskRatchet will make sure you
-              follow through.
+              Turn your goals into achievements with TaskRatchet's unique
+              approach. Set meaningful deadlines, choose your own motivation
+              level, and watch as your productivity soars. We're here to help
+              you follow through on what matters most to you.
             </p>
           </div>
 
           <div class="feature">
             <h2>💰 Stake Real Money</h2>
             <p>
-              You decide how much you stake for each task. TaskRatchet will
-              charge you that amount if you miss your deadline. Completed the
-              task but forgot to check it off? Reply to the charge notification
-              and we'll cancel the charge for you.
+              You're in control - choose a stake that feels right for each task.
+              Life happens, and we understand that. If you've completed your
+              task but forgot to mark it, no worries! Just let us know, and
+              we'll make sure you're not charged. Your success is our priority.
             </p>
           </div>
 
           <div class="feature">
             <h2>🐝 Integrates with Beeminder</h2>
             <p>
-              Use Beeminder to commit to regularly creating and completing
-              tasks. TaskRatchet will automatically send data to your Beeminder
-              goal.
+              Love Beeminder? So do we! Connect your account to create a
+              seamless productivity ecosystem. We'll automatically sync your
+              progress, helping you build lasting habits while staying
+              accountable.
             </p>
           </div>
         </div>
@@ -167,21 +170,25 @@ import Layout from "../layouts/Layout.astro";
         <div class="personas">
           <div class="persona">
             <h3>Freelancers</h3>
-            <p>Stay on top of client deadlines</p>
+            <p>
+              Turn client commitments into completed projects with confidence
+            </p>
           </div>
           <div class="persona">
             <h3>Students</h3>
-            <p>Avoid procrastination on assignments</p>
+            <p>
+              Transform last-minute rushes into ahead-of-schedule submissions
+            </p>
           </div>
           <div class="persona">
             <h3>Creators</h3>
-            <p>Tackle personal projects with accountability</p>
+            <p>Bring your creative visions to life, one task at a time</p>
           </div>
           <div class="persona">
-            <h3>Every-day Joe</h3>
+            <h3>Everyday Achievers</h3>
             <p>
-              Make sure your day to day responsibilities and passions are not
-              left in the dust
+              Turn your daily goals and personal passions into consistent
+              progress
             </p>
           </div>
         </div>
@@ -384,14 +391,19 @@ import Layout from "../layouts/Layout.astro";
     left: 0;
     right: 0;
     height: 100%;
-    background: radial-gradient(
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      radial-gradient(
         circle at top right,
-        rgba(59, 130, 246, 0.1),
+        rgba(59, 130, 246, 0.2),
         transparent 70%
       ),
       radial-gradient(
         circle at bottom left,
-        rgba(139, 92, 246, 0.1),
+        rgba(139, 92, 246, 0.2),
         transparent 70%
       );
     z-index: 0;
@@ -403,30 +415,37 @@ import Layout from "../layouts/Layout.astro";
   }
 
   h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3rem, 7vw, 4.5rem);
     font-weight: 800;
     margin: 0;
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    font-feature-settings:
+      "salt" 1,
+      "ss01" 1;
   }
 
   .tagline {
-    font-size: clamp(1.25rem, 3vw, 1.875rem);
-    margin: 1.5rem 0;
-    color: var(--gray-700);
-    font-weight: 500;
-  }
-
-  .description {
-    max-width: 600px;
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
     margin: 1.5rem auto;
-    color: var(--gray-700);
-    line-height: 1.7;
-    font-size: 1.125rem;
+    color: var(--gray-200);
+    font-weight: 500;
+    max-width: 65ch;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
   }
-
+  .description {
+    max-width: 65ch;
+    margin: 2rem auto;
+    color: var(--gray-200);
+    line-height: 1.75;
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+    letter-spacing: 0.01em;
+    font-weight: 400;
+  }
   .button {
     display: inline-block;
     padding: 0.875rem 2rem;
@@ -565,20 +584,27 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .feature h2 {
-    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
     color: var(--heading-text, var(--gray-900));
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-feature-settings: "salt" 1;
   }
 
   .feature p {
     color: var(--feature-text, var(--gray-700));
-    line-height: 1.7;
-    font-size: 1.125rem;
+    line-height: 1.75;
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
     margin: 0;
+    max-width: 65ch;
+    letter-spacing: 0.0125em;
+    font-weight: 400;
   }
 
   @media (max-width: 768px) {
@@ -693,8 +719,13 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .team-member p {
-    color: var(--feature-text, var(--gray-700));
-    line-height: 1.7;
+    color: var(--feature-text, var(--gray-900));
+    line-height: 1.75;
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
+    max-width: 65ch;
+    margin: 0 auto;
+    letter-spacing: 0.0125em;
+    font-weight: 400;
   }
 
   .team-photo {
