@@ -19,6 +19,7 @@
   --text-primary: var(--gray-800);
   --text-secondary: var(--gray-700);
   --border-color: var(--gray-200);
+  --logo-text: var(--gray-900);
 
   /* Theme transition */
   --theme-transition-duration: 0.3s;
