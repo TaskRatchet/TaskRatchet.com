@@ -134,6 +134,14 @@
   - Use background-position to control focal point
   - Prefer cropping less interesting parts of image when aspect ratio changes
 
+## Image Handling Guidelines
+- Use aspect-ratio instead of fixed dimensions
+- Set object-position: center top for profile photos
+- Maintain consistent container widths
+- Let images fill their containers
+- Use overflow: hidden on containers
+- Consider hover effects carefully with image containers
+
 ## Hero Section Guidelines
 - Use subtle background patterns with low opacity (0.05-0.1) for depth
 - Implement responsive typography with clamp()
