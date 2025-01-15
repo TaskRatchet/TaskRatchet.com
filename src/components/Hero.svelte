@@ -111,6 +111,7 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transform: perspective(1000px) rotateY(-5deg);
     transition: transform 0.3s ease;
+    object-fit: cover;
   }
 
   .feature-image:hover {
