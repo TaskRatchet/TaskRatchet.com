@@ -1,6 +1,6 @@
 <section class="for-who">
   <div class="container">
-    <h2>Who is TaskRatchet for</h2>
+    <h2>Perfect For</h2>
     <div class="personas">
       <div class="persona">
         <h3>Freelancers</h3>
