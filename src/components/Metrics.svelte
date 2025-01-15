@@ -124,10 +124,10 @@
     top: 120%;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--bg-main);
+    background: var(--bg-card);
     padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     width: 300px;
     color: var(--text-primary);
     font-size: 0.875rem;
@@ -147,7 +147,7 @@
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--bg-main);
+    border-bottom: 8px solid var(--bg-card);
   }
 
   @media (max-width: 768px) {
