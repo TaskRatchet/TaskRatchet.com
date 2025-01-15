@@ -7,11 +7,11 @@
   <div class="container">
     <div class="hero-content">
       <h1>TaskRatchet</h1>
-      <p class="tagline">Your Partner in Getting Things Done</p>
+      <p class="tagline">The Todo List That Keeps You Accountable</p>
       <p class="description">
-        Transform your productivity journey with a todo list that truly
-        understands what motivates you. Because sometimes, we all need that extra
-        push.
+        Set deadlines and stake real money on your tasks. Complete them on time or pay
+        the price you set. Perfect for procrastinators who need a stronger incentive
+        than just another notification.
       </p>
       <div class="cta-buttons">
         <Button href="https://app.taskratchet.com/register" variant="primary">Sign Up</Button>
