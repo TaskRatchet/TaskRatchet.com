@@ -34,3 +34,46 @@
     </div>
   </div>
 </section>
+
+<style>
+  .features {
+    padding: 2.5rem 0 4rem;
+    background-color: var(--bg-main);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 1.5rem 0 2.5rem;
+    color: var(--text-primary);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .feature {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-4px);
+  }
+
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .feature p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+</style>

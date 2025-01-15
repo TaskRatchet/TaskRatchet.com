@@ -73,12 +73,70 @@
 </header>
 
 <style>
+  .site-header {
+    padding: 1rem 0;
+    background: var(--bg-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
   .header-logo {
     width: 40px;
     height: 40px;
     transition: transform 0.2s ease;
-    /* Prevent layout shift during image load */
     aspect-ratio: 1;
     object-fit: contain;
+  }
+
+  .site-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--logo-text);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-toggle:hover {
+    background: var(--bg-card);
+  }
+
+  :global([data-theme="dark"]) .sun-icon {
+    display: none;
+  }
+
+  :global([data-theme="light"]) .moon-icon {
+    display: none;
   }
 </style>

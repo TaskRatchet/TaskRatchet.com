@@ -118,6 +118,40 @@
 - If styles flash and disappear, check if they need to be global with `is:global`
 - Avoid setting height: 100vh on body, use min-height on main instead to prevent scroll issues
 
+## Styling Guidelines
+
+- Keep styles in component files unless they are truly global
+- Global styles should be limited to:
+  - CSS variables
+  - Reset styles
+  - Base typography
+  - Utility classes (like .container)
+- Use `<style is:global>` for styles that need to apply across multiple elements
+- Use regular `<style>` for component-specific styles that should be scoped
+- Set base background color on `main` element, only override for specific sections
+- Use gray-100 for card backgrounds to ensure sufficient contrast against white
+- For hero background images:
+  - Use background-position to control focal point
+  - Prefer cropping less interesting parts of image when aspect ratio changes
+
+## Hero Section Guidelines
+- Use subtle background patterns with low opacity (0.05-0.1) for depth
+- Implement responsive typography with clamp()
+- Add perspective transforms for subtle 3D effects
+- Keep animations subtle and smooth (0.2-0.3s)
+- Use grid layouts for flexible content arrangement
+- Ensure dark mode has reduced pattern opacity
+- Maintain readability with sufficient contrast
+- Scale down effects on mobile for better performance
+
+## Spacing Guidelines
+- Use asymmetric padding for sections: 2.5rem top, 4rem bottom
+- Center section headings visually with 1.5rem top margin, 2.5rem bottom margin
+- Section headings should be 2.25rem
+- Reduce spacing on mobile by ~25%
+- Keep consistent vertical rhythm between sections
+- Use negative margins sparingly, only for overlapping effects
+
 ## Preventing Flash of Unstyled Content (FOUC)
 - Put critical theme variables in inline styles in Layout.astro
 - Include essential layout styles inline (container widths, critical positioning)

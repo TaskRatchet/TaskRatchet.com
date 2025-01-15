@@ -12,10 +12,10 @@
         <span class="metric-label">Tasks Created</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-        <div class="metric-tooltip-content">
+          <div class="metric-tooltip-content">
             Total number of tasks users have created on TaskRatchet over the
             lifespan of the tool.
-        </div>
+          </div>
         </div>
       </div>
       <div class="metric">
@@ -23,9 +23,9 @@
         <span class="metric-label">In Active Stakes</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-        <div class="metric-tooltip-content" style="display: table-cell">
+          <div class="metric-tooltip-content">
             Total amount of money currently staked on active tasks.
-        </div>
+          </div>
         </div>
       </div>
       <div class="metric">
@@ -35,11 +35,11 @@
         <span class="metric-label">Completion Rate</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-        <div class="metric-tooltip-content" style="display: table-cell">
+          <div class="metric-tooltip-content">
             Percentage of tasks successfully completed on time by our users.
-            {(percentageCompletion * 100).toFixed(2)}% of tasks created by
-            our users resulted in them successfully meeting their goals.
-        </div>
+            {(percentageCompletion * 100).toFixed(2)}% of tasks created by our
+            users resulted in them successfully meeting their goals.
+          </div>
         </div>
       </div>
     </div>
@@ -48,9 +48,9 @@
 
 <style>
   .metrics {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
-    margin-top: -2rem;
+    margin-top: -1rem;
     color: white;
     position: relative;
     overflow: visible;
@@ -72,48 +72,36 @@
     z-index: 1;
   }
 
-.metric {
-display: inline-flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-position: relative;
-margin: 0 auto;
-justify-self: center;
-}
+  .metrics > .container {
+    position: relative;
+    z-index: 2;
+  }
 
-.metric:nth-child(1) {
-    z-index: 30;
-}
-
-.metric:nth-child(2) {
-    z-index: 20;
-}
-
-.metric:nth-child(3) {
-    z-index: 10;
-}
-
-.metrics > .container {
-position: relative;
-z-index: 2;
-}
-
-.metric-tooltip {
-display: table;
-position: absolute;
-top: 120%;
-left: 50%;
-width: 300px;
-transform: translateX(-50%);
-z-index: 10;
-}
-
-.metrics-grid {
+  .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+  }
+
+  .metric {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
+  .metric:nth-child(1) {
+    z-index: 30;
+  }
+  .metric:nth-child(2) {
+    z-index: 20;
+  }
+  .metric:nth-child(3) {
+    z-index: 10;
   }
 
   .metric-number {
@@ -128,6 +116,38 @@ z-index: 10;
     font-size: 1.25rem;
     opacity: 0.9;
     font-weight: 500;
+  }
+
+  .metric-tooltip {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-main);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    z-index: 10;
+  }
+
+  .metric:hover .metric-tooltip {
+    display: block;
+  }
+
+  .metric-tooltip-arrow {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--bg-main);
   }
 
   @media (max-width: 768px) {
