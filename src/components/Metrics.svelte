@@ -72,15 +72,28 @@
     z-index: 1;
   }
 
-  .metric {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-  }
+.metric {
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: relative;
+margin: 0 auto;
+justify-self: center;
+}
+
+.metric:nth-child(1) {
+    z-index: 30;
+}
+
+.metric:nth-child(2) {
+    z-index: 20;
+}
+
+.metric:nth-child(3) {
+    z-index: 10;
+}
 
 .metrics > .container {
 position: relative;
