@@ -34,6 +34,13 @@
 
 ## Styling Guidelines
 
+### Hover States
+- When changing background color on hover, always adjust text color for contrast
+- Use gray-50 for text on dark backgrounds
+- Use gray-900 for text on light backgrounds
+- Apply hover text colors to all child elements that need contrast
+
+
 ### Z-index Layering
 For mobile navigation with drawer and backdrop:
 - Hamburger/close button: z-index 110

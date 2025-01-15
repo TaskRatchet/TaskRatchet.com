@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import Button from './Button.svelte';
 
   let theme: string;
   let isMenuOpen = false;
@@ -54,9 +55,7 @@
         <a href="https://docs.taskratchet.com/">Docs</a>
       </div>
       <div class="nav-actions">
-        <a href="https://app.taskratchet.com/login" class="button secondary"
-          >Sign In</a
-        >
+        <Button href="https://app.taskratchet.com/login" variant="secondary">Sign In</Button>
         <button
           class="theme-toggle"
           aria-label="Toggle theme"

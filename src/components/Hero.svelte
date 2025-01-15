@@ -1,3 +1,7 @@
+<script lang="ts">
+  import Button from './Button.svelte';
+</script>
+
 <section class="hero">
   <div class="hero-background"></div>
   <div class="container">
@@ -10,10 +14,8 @@
         push.
       </p>
       <div class="cta-buttons">
-        <a href="https://app.taskratchet.com/register" class="button primary"
-          >Sign Up</a
-        >
-        <a href="#how-it-works" class="button secondary">How It Works</a>
+        <Button href="https://app.taskratchet.com/register" variant="primary">Sign Up</Button>
+        <Button href="#how-it-works" variant="secondary">How It Works</Button>
       </div>
     </div>
     <div class="hero-image">

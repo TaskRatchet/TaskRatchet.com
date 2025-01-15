@@ -46,6 +46,25 @@
     background: var(--bg-main);
     border-radius: 1rem;
     position: relative;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .step:hover {
+    background: var(--gray-800);
+  }
+
+  .step:hover h3,
+  .step:hover p {
+    color: var(--gray-50);
+  }
+
+  :global([data-theme="light"]) .step:hover {
+    background: var(--gray-100);
+  }
+
+  :global([data-theme="light"]) .step:hover h3,
+  :global([data-theme="light"]) .step:hover p {
+    color: var(--gray-900);
   }
 
   .step-number {
