@@ -4,15 +4,11 @@
     <div class="personas">
       <div class="persona">
         <h3>Freelancers</h3>
-        <p>
-          Turn client commitments into completed projects with confidence
-        </p>
+        <p>Turn client commitments into completed projects with confidence</p>
       </div>
       <div class="persona">
         <h3>Students</h3>
-        <p>
-          Transform last-minute rushes into ahead-of-schedule submissions
-        </p>
+        <p>Transform last-minute rushes into ahead-of-schedule submissions</p>
       </div>
       <div class="persona">
         <h3>Creators</h3>
@@ -21,8 +17,7 @@
       <div class="persona">
         <h3>Everyday Achievers</h3>
         <p>
-          Turn your daily goals and personal passions into consistent
-          progress
+          Turn your daily goals and personal passions into consistent progress
         </p>
       </div>
     </div>
@@ -38,7 +33,7 @@
   h2 {
     text-align: center;
     font-size: 2.25rem;
-    margin: 1.5rem 0 2.5rem;
+    margin: 0 0 2.5rem;
     color: var(--text-primary);
   }
 
