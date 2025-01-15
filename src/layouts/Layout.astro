@@ -13,11 +13,50 @@ import '../styles/global.css';
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 		<title>TaskRatchet - The Todo List You Won't Ignore</title>
+		<style is:inline>
+			/* Critical styles to prevent flash */
+			:root {
+				--bg-main: white;
+				--text-primary: #1e293b;
+				--bg-header: rgba(255, 255, 255, 0.75);
+				--logo-text: #0f172a;
+			}
+			
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg-main: #0f172a;
+					--text-primary: #f8fafc;
+					--bg-header: rgba(15, 23, 42, 0.75);
+					--logo-text: #f8fafc;
+				}
+			}
+
+			/* Ensure immediate dark mode if saved */
+			html[data-theme="dark"] {
+				--bg-main: #0f172a;
+				--text-primary: #f8fafc;
+				--bg-header: rgba(15, 23, 42, 0.75);
+				--logo-text: #f8fafc;
+			}
+
+			body {
+				background-color: var(--bg-main);
+				color: var(--text-primary);
+				margin: 0;
+			}
+
+			.header-logo {
+				width: 40px;
+				height: 40px;
+			}
+		</style>
 		<script is:inline>
-			// Initial theme setup
-			const theme = localStorage.getItem('theme') || 
-				(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-			document.documentElement.setAttribute('data-theme', theme);
+			// Initial theme setup - run as early as possible
+			(function() {
+				const theme = localStorage.getItem('theme') || 
+					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
 		</script>
 	</head>
 	<body>

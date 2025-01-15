@@ -43,15 +43,22 @@ html[data-theme="dark"] {
 html {
   font-family: var(--font-sans);
   scroll-behavior: smooth;
-  transition: all var(--theme-transition-duration)
-    var(--theme-transition-timing);
+  /* Only transition specific properties to avoid unwanted transitions during load */
+  transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
+              color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
-/* Add transitions to all elements that might change color */
-*,
-*::before,
-*::after {
-  transition: all 0.3s ease;
+/* Only add color transitions to specific elements */
+.site-header,
+.metrics,
+.feature,
+.step,
+.persona,
+.team-member {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
 }
 
 /* Exclude transitions from elements where it might cause issues */

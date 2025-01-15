@@ -19,6 +19,9 @@
   - `/pages` - Astro pages (file-based routing)
   - `/layouts` - Reusable layouts
   - `/components` - Reusable components (Astro and Svelte)
+    - Each component should be in its own file
+    - Use Svelte for interactive components
+    - Use Astro for static components
   - `/styles` - Global CSS files
 
 ## Troubleshooting
@@ -32,6 +35,13 @@
 ## Styling Guidelines
 
 - Keep styles in component files unless they are truly global
+- When splitting components:
+  - Move related styles into the component file
+  - Use `<style>` blocks in Svelte components
+  - Keep only theme variables and utility classes in global.css
+  - Use `:global()` in Svelte components when styles need to apply across component boundaries
+  - Be careful with transitions and animations when using scoped styles
+=======
 - Global styles should be limited to:
   - CSS variables
   - Reset styles
@@ -96,3 +106,10 @@
 ## Common Issues
 - If styles flash and disappear, check if they need to be global with `is:global`
 - Avoid setting height: 100vh on body, use min-height on main instead to prevent scroll issues
+
+## Preventing Flash of Unstyled Content (FOUC)
+- Put critical theme variables in inline styles in Layout.astro
+- Set data-theme attribute before page renders using inline script
+- Use aspect-ratio and object-fit on images to prevent layout shift
+- Hide components that need theme data until after first render
+- Only transition specific CSS properties instead of using `transition: all`
