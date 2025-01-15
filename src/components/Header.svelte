@@ -26,7 +26,8 @@
       <span class="site-name">TaskRatchet</span>
     </div>
     <nav>
-      <button
+    <a href="https://docs.taskratchet.com/" class="button secondary">Docs</a>
+    <button
         class="theme-toggle"
         aria-label="Toggle theme"
         on:click={toggleTheme}
