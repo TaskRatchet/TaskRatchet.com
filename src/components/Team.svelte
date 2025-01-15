@@ -100,6 +100,10 @@
     order: 2;
   }
 
+  .team-member h3 {
+    margin-top: 0;
+  }
+
   .member-image {
     position: relative;
     border-radius: 1rem;
