@@ -10,9 +10,7 @@
       <div class="step">
         <span class="step-number">2</span>
         <h3>Get Reminders</h3>
-        <p>
-          Stay on track with timely reminders as your deadline approaches.
-        </p>
+        <p>Stay on track with timely reminders as your deadline approaches.</p>
       </div>
       <div class="step">
         <span class="step-number">3</span>
@@ -32,7 +30,7 @@
   h2 {
     text-align: center;
     font-size: 2.25rem;
-    margin: 1.5rem 0 2.5rem;
+    margin: 0 0 2.5rem;
     color: var(--text-primary);
   }
 

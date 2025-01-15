@@ -5,10 +5,10 @@
       <div class="feature">
         <h2>Deadlines with Consequences</h2>
         <p>
-          Turn your goals into achievements with TaskRatchet's unique
-          approach. Set meaningful deadlines, choose your own motivation
-          level, and watch as your productivity soars. We're here to help
-          you follow through on what matters most to you.
+          Turn your goals into achievements with TaskRatchet's unique approach.
+          Set meaningful deadlines, choose your own motivation level, and watch
+          as your productivity soars. We're here to help you follow through on
+          what matters most to you.
         </p>
       </div>
 
@@ -16,19 +16,18 @@
         <h2>Stake Real Money</h2>
         <p>
           You're in control - choose a stake that feels right for each task.
-          Life happens, and we understand that. If you've completed your
-          task but forgot to mark it, no worries! Just let us know, and
-          we'll make sure you're not charged. Your success is our priority.
+          Life happens, and we understand that. If you've completed your task
+          but forgot to mark it, no worries! Just let us know, and we'll make
+          sure you're not charged. Your success is our priority.
         </p>
       </div>
 
       <div class="feature">
         <h2>Integrates with Beeminder</h2>
         <p>
-          Love Beeminder? So do we! Connect your account to create a
-          seamless productivity ecosystem. We'll automatically sync your
-          progress, helping you build lasting habits while staying
-          accountable.
+          Love Beeminder? So do we! Connect your account to create a seamless
+          productivity ecosystem. We'll automatically sync your progress,
+          helping you build lasting habits while staying accountable.
         </p>
       </div>
     </div>
@@ -44,7 +43,7 @@
   h2 {
     text-align: center;
     font-size: 2.25rem;
-    margin: 1.5rem 0 2.5rem;
+    margin: 0 0 2.5rem;
     color: var(--text-primary);
   }
 
