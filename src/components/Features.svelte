@@ -42,9 +42,10 @@
 
   h2 {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: var(--text-3xl);
     margin: 0 0 2.5rem;
     color: var(--text-primary);
+    letter-spacing: var(--tracking-tight);
   }
 
   .features-grid {
@@ -66,13 +67,15 @@
   }
 
   .feature h2 {
-    font-size: 1.5rem;
+    font-size: var(--text-2xl);
     margin-bottom: 1rem;
     text-align: left;
+    line-height: var(--leading-snug);
   }
 
   .feature p {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: var(--leading-relaxed);
+    font-size: var(--text-base);
   }
 </style>

@@ -64,27 +64,28 @@
   }
 
   h1 {
-    font-size: clamp(3rem, 5vw, 4.5rem);
-    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
     margin-bottom: 1rem;
     color: var(--text-primary);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tighter);
   }
 
   .tagline {
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-size: clamp(var(--text-xl), 2vw, var(--text-2xl));
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: var(--leading-snug);
   }
 
   .description {
     max-width: 600px;
     margin-bottom: 2rem;
     color: var(--text-secondary);
-    font-size: 1.125rem;
-    line-height: 1.6;
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
   }
 
   .cta-buttons {

@@ -71,9 +71,10 @@
 
   h2 {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: var(--text-3xl);
     margin: 0 0 2.5rem;
     color: var(--text-primary);
+    letter-spacing: var(--tracking-tight);
   }
 
   .team-members {
@@ -164,15 +165,17 @@
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: var(--text-2xl);
     margin-bottom: 1rem;
     color: var(--text-primary);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
   }
 
   p {
     color: var(--text-secondary);
-    line-height: 1.6;
-    font-size: 0.95rem;
+    line-height: var(--leading-relaxed);
+    font-size: var(--text-base);
     margin: 0;
   }
 
