@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 </script>
 
 <section class="hero">
@@ -9,18 +9,20 @@
       <h1>TaskRatchet</h1>
       <p class="tagline">The Todo List That Keeps You Accountable</p>
       <p class="description">
-        Set deadlines and stake real money on your tasks. Complete them on time or pay
-        the price you set. Perfect for procrastinators who need a stronger incentive
-        than just another notification.
+        Set deadlines and stake real money on your tasks. Complete them on time
+        or pay the price you set. Perfect for procrastinators who need a
+        stronger incentive than just another notification.
       </p>
       <div class="cta-buttons">
-        <Button href="https://app.taskratchet.com/register" variant="primary">Sign Up</Button>
+        <Button href="https://app.taskratchet.com/register" variant="primary"
+          >Sign Up</Button
+        >
         <Button href="#how-it-works" variant="secondary">How It Works</Button>
       </div>
     </div>
     <div class="hero-image">
-      <img 
-        src="/midjourney-a_woman_working_late_into_the_night_at_her_computer.png" 
+      <img
+        src="/midjourney-a_woman_working_late_into_the_night_at_her_computer.png"
         alt="A woman working at her computer"
         class="feature-image"
       />
@@ -44,8 +46,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(circle at 20% 20%, var(--primary) 0%, transparent 25%),
-                      radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 25%);
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        var(--primary) 0%,
+        transparent 25%
+      ),
+      radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 25%);
     opacity: 0.1;
     pointer-events: none;
   }
@@ -100,6 +106,7 @@
   .feature-image {
     width: 100%;
     height: auto;
+    max-height: 600px;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transform: perspective(1000px) rotateY(-5deg);
@@ -145,7 +152,11 @@
 
   /* Dark mode adjustments */
   :global([data-theme="dark"]) .hero {
-    background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-800) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--gray-900) 0%,
+      var(--gray-800) 100%
+    );
   }
 
   :global([data-theme="dark"]) .hero-background {
