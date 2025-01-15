@@ -34,6 +34,14 @@
 
 ## Styling Guidelines
 
+### Z-index Layering
+For mobile navigation with drawer and backdrop:
+- Hamburger/close button: z-index 110
+- Drawer/navigation: z-index 100
+- Backdrop: z-index 90
+- Main content: default
+
+
 - Keep styles in component files unless they are truly global
 - When splitting components:
   - Move related styles into the component file

@@ -49,9 +49,6 @@
       <img src="/logo.png" alt="TaskRatchet Logo" class="header-logo" />
       <span class="site-name">TaskRatchet</span>
     </div>
-    <button class="menu-toggle" aria-label="Toggle menu" on:click={toggleMenu}>
-      <span class="hamburger"></span>
-    </button>
     <nav class:active={isMenuOpen}>
       <div class="nav-links">
         <a href="https://docs.taskratchet.com/">Docs</a>
@@ -100,6 +97,9 @@
         </button>
       </div>
     </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" on:click={toggleMenu}>
+      <span class="hamburger"></span>
+    </button>
   </div>
 </header>
 
@@ -238,7 +238,7 @@
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
-      z-index: 20;
+      z-index: 110;
     }
 
     .backdrop {
@@ -294,18 +294,33 @@
     }
 
     /* Hamburger animation */
-    .active ~ .menu-toggle .hamburger {
-      background: transparent;
+    .menu-toggle .hamburger,
+    .menu-toggle .hamburger::before,
+    .menu-toggle .hamburger::after {
+      transition: all 0.3s ease;
     }
 
-    .active ~ .menu-toggle .hamburger::before {
-      transform: rotate(45deg);
-      top: 0;
+    .menu-toggle .hamburger {
+      background: var(--text-primary);
     }
 
-    .active ~ .menu-toggle .hamburger::after {
-      transform: rotate(-45deg);
-      bottom: 0;
+    .menu-toggle .hamburger::before,
+    .menu-toggle .hamburger::after {
+      background: var(--text-primary);
+    }
+
+    :global(nav.active) ~ .menu-toggle .hamburger {
+      background: transparent !important;
+    }
+
+    :global(nav.active) ~ .menu-toggle .hamburger::before {
+      transform: rotate(45deg) !important;
+      top: 0 !important;
+    }
+
+    :global(nav.active) ~ .menu-toggle .hamburger::after {
+      transform: rotate(-45deg) !important;
+      bottom: 0 !important;
     }
   }
 </style>
