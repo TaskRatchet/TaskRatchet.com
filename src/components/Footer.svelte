@@ -33,7 +33,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Built with ❤️ by Narthur and Pine Peak Digital.</p>
+      <p>
+        Built with ❤️ by <a href="https://nathanarthur.com">Narthur</a> and
+        <a href="https://pinepeakdigital.com">Pine Peak Digital</a>.
+      </p>
       <p class="copyright">
         &copy; {new Date().getFullYear()} TaskRatchet. All rights reserved.
       </p>
@@ -78,8 +81,21 @@
     transition: color 0.2s ease;
   }
 
-  .footer-section a:hover {
+  .footer-section a,
+  .footer-bottom a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .footer-section a:hover,
+  .footer-bottom a:hover {
     color: var(--primary);
+  }
+
+  :global([data-theme="dark"]) .footer-section a:hover,
+  :global([data-theme="dark"]) .footer-bottom a:hover {
+    color: var(--primary-dark);
   }
 
   .footer-bottom {
