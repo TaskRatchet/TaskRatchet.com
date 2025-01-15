@@ -53,9 +53,19 @@ import '../styles/global.css';
 		<script is:inline>
 			// Initial theme setup - run as early as possible
 			(function() {
+				// Add class to disable transitions during load
+				document.documentElement.classList.add('no-transitions');
+				
 				const theme = localStorage.getItem('theme') || 
 					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 				document.documentElement.setAttribute('data-theme', theme);
+				
+				// Remove the no-transitions class after a small delay
+				window.addEventListener('load', () => {
+					setTimeout(() => {
+						document.documentElement.classList.remove('no-transitions');
+					}, 100);
+				});
 			})();
 		</script>
 	</head>

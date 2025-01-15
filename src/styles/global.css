@@ -23,6 +23,12 @@
   /* Theme transition */
   --theme-transition-duration: 0.3s;
   --theme-transition-timing: ease;
+  --theme-transition-properties: background-color, color, border-color, box-shadow, -webkit-text-fill-color;
+}
+
+/* Disable all transitions on page load */
+.no-transitions * {
+  transition: none !important;
 }
 
 html[data-theme="dark"] {
@@ -43,22 +49,47 @@ html[data-theme="dark"] {
 html {
   font-family: var(--font-sans);
   scroll-behavior: smooth;
-  /* Only transition specific properties to avoid unwanted transitions during load */
-  transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
-              color var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
-/* Only add color transitions to specific elements */
+/* Theme transition styles for elements that need them */
 .site-header,
 .metrics,
 .feature,
 .step,
 .persona,
-.team-member {
-  transition: background-color 0.3s ease,
-              color 0.3s ease,
-              border-color 0.3s ease,
-              box-shadow 0.3s ease;
+.team-member,
+main,
+body,
+.button,
+.metric-tooltip,
+.metric-tooltip-content,
+.card,
+.feature h2,
+.feature p,
+.step h3,
+.step p,
+.persona h3,
+.persona p,
+.team-member h3,
+.team-member p,
+.metric-number,
+.metric-label {
+  transition-property: var(--theme-transition-properties);
+  transition-duration: var(--theme-transition-duration);
+  transition-timing-function: var(--theme-transition-timing);
+}
+
+/* Ensure background transitions are smooth for card-like elements */
+.feature,
+.step,
+.persona,
+.team-member,
+.metric-tooltip {
+  transition: 
+    background-color var(--theme-transition-duration) var(--theme-transition-timing),
+    color var(--theme-transition-duration) var(--theme-transition-timing),
+    border-color var(--theme-transition-duration) var(--theme-transition-timing),
+    box-shadow var(--theme-transition-duration) var(--theme-transition-timing);
 }
 
 /* Exclude transitions from elements where it might cause issues */

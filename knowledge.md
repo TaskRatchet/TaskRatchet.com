@@ -83,6 +83,17 @@
 - Use CSS variables for theme colors to support dark mode
 
 ## Theme System
+
+### Transitions
+- Disable all transitions during initial page load with `.no-transitions`
+- Enable transitions after page load with small delay
+- Use CSS variables to maintain consistent transition properties
+- Apply transitions only to specific properties that need them
+- Keep transition duration around 300ms for optimal UX
+- Include -webkit-text-fill-color in theme transitions for consistent text fading
+- Apply transitions to both container elements and their text children
+- Use explicit transition properties for card-like elements to ensure smooth background changes
+
 - Use `data-theme` attribute on html element for theme switching
 - Store theme preference in localStorage
 - Default to system color scheme preference
