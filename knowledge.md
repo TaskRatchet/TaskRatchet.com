@@ -120,7 +120,11 @@
 
 ## Preventing Flash of Unstyled Content (FOUC)
 - Put critical theme variables in inline styles in Layout.astro
+- Include essential layout styles inline (container widths, critical positioning)
+- Add font-family declaration inline to prevent text reflow
 - Set data-theme attribute before page renders using inline script
 - Use aspect-ratio and object-fit on images to prevent layout shift
-- Hide components that need theme data until after first render
-- Only transition specific CSS properties instead of using `transition: all`
+- Hide body initially with opacity and fade in after styles load
+- Set minimum heights on containers that will have dynamic content
+- Disable pointer-events on interactive elements until mounted
+- Use visibility/opacity to hide tooltips and popups during load

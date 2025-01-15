@@ -20,6 +20,11 @@ import '../styles/global.css';
 				--text-primary: #1e293b;
 				--bg-header: rgba(255, 255, 255, 0.75);
 				--logo-text: #0f172a;
+				--primary: #3b82f6;
+				--secondary: #8b5cf6;
+				--gray-100: #f1f5f9;
+				--font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 			}
 			
 			@media (prefers-color-scheme: dark) {
@@ -43,12 +48,40 @@ import '../styles/global.css';
 				background-color: var(--bg-main);
 				color: var(--text-primary);
 				margin: 0;
+				font-family: var(--font-sans);
 			}
 
 			.header-logo {
 				width: 40px;
 				height: 40px;
 			}
+
+			/* Prevent layout shift for hero section */
+			.hero {
+				min-height: 600px;
+				background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
+				padding: 14rem 0 6rem;
+				margin-top: -4rem;
+				text-align: center;
+			}
+
+			/* Critical header styles */
+			.site-header {
+				padding: 1rem 0;
+				background: var(--bg-header);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 100;
+			}
+
+			.container {
+				max-width: 1600px;
+				margin: 0 auto;
+				padding: 0 3rem;
+			}
+
 		</style>
 		<script is:inline>
 			// Initial theme setup - run as early as possible

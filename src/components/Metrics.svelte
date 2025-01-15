@@ -12,10 +12,10 @@
         <span class="metric-label">Tasks Created</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-          <div class="metric-tooltip-content">
+        <div class="metric-tooltip-content">
             Total number of tasks users have created on TaskRatchet over the
             lifespan of the tool.
-          </div>
+        </div>
         </div>
       </div>
       <div class="metric">
@@ -23,9 +23,9 @@
         <span class="metric-label">In Active Stakes</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-          <div class="metric-tooltip-content">
+        <div class="metric-tooltip-content" style="display: table-cell">
             Total amount of money currently staked on active tasks.
-          </div>
+        </div>
         </div>
       </div>
       <div class="metric">
@@ -35,11 +35,11 @@
         <span class="metric-label">Completion Rate</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
-          <div class="metric-tooltip-content">
+        <div class="metric-tooltip-content" style="display: table-cell">
             Percentage of tasks successfully completed on time by our users.
             {(percentageCompletion * 100).toFixed(2)}% of tasks created by
             our users resulted in them successfully meeting their goals.
-          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -82,12 +82,22 @@
     z-index: 2;
   }
 
-  .metrics > .container {
-    position: relative;
-    z-index: 2;
-  }
+.metrics > .container {
+position: relative;
+z-index: 2;
+}
 
-  .metrics-grid {
+.metric-tooltip {
+display: table;
+position: absolute;
+top: 120%;
+left: 50%;
+width: 300px;
+transform: translateX(-50%);
+z-index: 10;
+}
+
+.metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
