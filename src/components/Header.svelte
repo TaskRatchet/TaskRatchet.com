@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 
   let theme: string;
   let isMenuOpen = false;
@@ -29,15 +29,15 @@
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
   }
 
   function closeMenu() {
     isMenuOpen = false;
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
   }
 </script>
 
@@ -52,10 +52,13 @@
     </div>
     <nav class:active={isMenuOpen}>
       <div class="nav-links">
+        <a href="https://docs.taskratchet.com/help/faq.html">FAQ</a>
         <a href="https://docs.taskratchet.com/">Docs</a>
       </div>
       <div class="nav-actions">
-        <Button href="https://app.taskratchet.com/login" variant="secondary">Sign In</Button>
+        <Button href="https://app.taskratchet.com/login" variant="secondary"
+          >Sign In</Button
+        >
         <button
           class="theme-toggle"
           aria-label="Toggle theme"
@@ -214,7 +217,7 @@
 
   .hamburger::before,
   .hamburger::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 24px;
     height: 2px;
