@@ -11,3 +11,10 @@ services:
     envVars:
       - key: SKIP_INSTALL_DEPS
         value: "true"
+    routes:
+      - type: redirect
+        source: /help.html
+        destination: https://docs.taskratchet.com/
+      - type: redirect
+        source: /help/*
+        destination: https://docs.taskratchet.com/*
