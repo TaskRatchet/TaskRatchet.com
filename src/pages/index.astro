@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import fetch from "node-fetch";
 import Header from "../components/Header.svelte";
 import Hero from "../components/Hero.svelte";
 import Metrics from "../components/Metrics.svelte";
@@ -9,31 +8,24 @@ import HowItWorks from "../components/HowItWorks.svelte";
 import ForWho from "../components/ForWho.svelte";
 import Team from "../components/Team.svelte";
 import Footer from "../components/Footer.svelte";
+import { fetchStats } from "../fetchStats";
 
-type Stats = {
-  totalTasks: number;
-  activeStakes: number;
-  percentageCompletion: number;
-};
-
-const stats = await fetch("https://api.taskratchet.com/api2/stats");
-const parsedStats: Stats = (await stats.json()) as Stats;
-const { totalTasks, activeStakes, percentageCompletion } = parsedStats;
+const stats = await fetchStats();
 ---
 
 <Layout>
-  <main>
-    <Header client:load />
-    <Hero />
-    <Metrics {totalTasks} {activeStakes} {percentageCompletion} />
-    <Features />
-    <HowItWorks />
-    <ForWho />
-    <Team />
-    <Footer />
-  </main>
+    <main>
+        <Header client:load />
+        <Hero />
+        <Metrics buildStats={stats} />
+        <Features />
+        <HowItWorks />
+        <ForWho />
+        <Team />
+        <Footer />
+    </main>
 </Layout>
 
-<style is:global>
-  /* Keep all the existing styles */
+<style>
+    /* Keep all the existing styles */
 </style>
