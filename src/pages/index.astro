@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import fetch from "node-fetch";
 import Header from "../components/Header.svelte";
 import Hero from "../components/Hero.svelte";
 import Metrics from "../components/Metrics.svelte";
@@ -25,7 +24,7 @@ const { totalTasks, activeStakes, percentageCompletion } = parsedStats;
   <main>
     <Header client:load />
     <Hero />
-    <Metrics {totalTasks} {activeStakes} {percentageCompletion} />
+    <Metrics client:load />
     <Features />
     <HowItWorks />
     <ForWho />
@@ -34,6 +33,6 @@ const { totalTasks, activeStakes, percentageCompletion } = parsedStats;
   </main>
 </Layout>
 
-<style is:global>
+<style>
   /* Keep all the existing styles */
 </style>
