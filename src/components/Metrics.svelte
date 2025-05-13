@@ -10,9 +10,7 @@
     try {
     stats = await fetchStats();
     loading = false;
-    } catch(e) {
-      console.log('there was an error');
-      console.error(e);
+    } catch {
       errorCase = true;
     }
   }
