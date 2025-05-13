@@ -8,13 +8,31 @@ import HowItWorks from "../components/HowItWorks.svelte";
 import ForWho from "../components/ForWho.svelte";
 import Team from "../components/Team.svelte";
 import Footer from "../components/Footer.svelte";
+
+type Stats = {
+  totalTasks: number;
+  activeStakes: number;
+  percentageCompletion: number;
+};
+
+const stats = await fetch("https://api.taskratchet.com/api2/stats");
+const parsedStats: Stats = (await stats.json()) as Stats;
+const {
+  totalTasks: buildTimeTotalTasks,
+  activeStakes: buildTimeActiveStakes,
+  percentageCompletion: buildTimePercentageCompletion,
+} = parsedStats;
 ---
 
 <Layout>
   <main>
-    <Header client:load />
+    <Header />
     <Hero />
-    <Metrics client:load />
+    <Metrics
+      {buildTimeTotalTasks}
+      {buildTimeActiveStakes}
+      {buildTimePercentageCompletion}
+    />
     <Features />
     <HowItWorks />
     <ForWho />

@@ -1,6 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { fetchStats, type Stats } from "../fetchStats";
+  
+  export let buildTimeTotalTasks: number;
+  export let buildTimeActiveStakes: number;
+  export let buildTimePercentageCompletion: number;
 
   let loading = true;
   let errorCase = false;
@@ -9,10 +13,10 @@
   const getStats = async () => {
     try {
     stats = await fetchStats();
-    loading = false;
     } catch {
       errorCase = true;
     }
+    loading = false;
   }
 
   onMount(getStats);
@@ -20,14 +24,9 @@
 
 <section class="metrics">
   <div class="container">
-
-    {#if errorCase === true}
-    <div>We're sorry, there was an error fetching Metrics. Please check back later.</div>
-    
-    {:else}
     <div class="metrics-grid">
       <div class="metric">
-        <span class="metric-number">{loading ? "..." : stats.totalTasks.toLocaleString()}</span>
+        <span class="metric-number">{loading || errorCase ? buildTimeTotalTasks.toLocaleString() : stats.totalTasks.toLocaleString()}</span>
         <span class="metric-label">Tasks Created</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
@@ -38,7 +37,7 @@
         </div>
       </div>
       <div class="metric">
-        <span class="metric-number">{loading ? "..." : `$${stats.activeStakes.toLocaleString()}`}</span>
+        <span class="metric-number">{loading || errorCase ? buildTimeActiveStakes.toLocaleString() : `$${stats.activeStakes.toLocaleString()}`}</span>
         <span class="metric-label">In Active Stakes</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
@@ -49,21 +48,19 @@
       </div>
       <div class="metric">
         <span class="metric-number"
-          >{loading ? "..." : `${(stats.percentageCompletion * 100).toFixed(2)}%`}</span
+          >{loading || errorCase ? `${(buildTimePercentageCompletion * 100).toFixed(2)}%` : `${(stats.percentageCompletion * 100).toFixed(2)}%`}</span
         >
         <span class="metric-label">Completion Rate</span>
         <div class="metric-tooltip">
           <div class="metric-tooltip-arrow"></div>
           <div class="metric-tooltip-content">
             Percentage of tasks successfully completed on time by our users.
-            {loading ? "..." : `${(stats.percentageCompletion * 100).toFixed(2)}%`} of tasks created by our
+            {loading || errorCase ? `${(buildTimePercentageCompletion * 100).toFixed(2)}%` : `${(stats.percentageCompletion * 100).toFixed(2)}%`} of tasks created by our
             users resulted in them successfully meeting their goals.
           </div>
         </div>
       </div>
     </div>
-    {/if}
-
   </div>
 </section>
 
