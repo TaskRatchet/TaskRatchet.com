@@ -3,11 +3,18 @@
   import { fetchStats, type Stats } from "../fetchStats";
 
   let loading = true;
+  let errorCase = false;
   let stats: Stats;
 
   const getStats = async () => {
+    try {
     stats = await fetchStats();
     loading = false;
+    } catch(e) {
+      console.log('there was an error');
+      console.error(e);
+      errorCase = true;
+    }
   }
 
   onMount(getStats);
@@ -15,6 +22,11 @@
 
 <section class="metrics">
   <div class="container">
+
+    {#if errorCase === true}
+    <div>We're sorry, there was an error fetching Metrics. Please check back later.</div>
+    
+    {:else}
     <div class="metrics-grid">
       <div class="metric">
         <span class="metric-number">{loading ? "..." : stats.totalTasks.toLocaleString()}</span>
@@ -52,6 +64,8 @@
         </div>
       </div>
     </div>
+    {/if}
+
   </div>
 </section>
 
