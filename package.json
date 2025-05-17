@@ -6,13 +6,18 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "knip": "knip"
   },
   "dependencies": {
     "@astrojs/svelte": "^7.0.3",
     "astro": "^5.1.6",
     "node-fetch": "^3.3.2",
-    "svelte": "^5.17.3",
+    "svelte": "^5.17.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "knip": "^5.56.0",
     "typescript": "^5.7.3"
   }
 }

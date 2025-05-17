@@ -1,0 +1,11 @@
+name: CI
+on:
+  push:
+jobs:
+  knip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: asdf-vm/actions/install@v3
+      - run: pnpm install
+      - run: pnpm run knip
