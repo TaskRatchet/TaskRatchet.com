@@ -17,7 +17,7 @@ const stats = await fetchStats();
     <main>
         <Header client:load />
         <Hero />
-        <Metrics buildStats={stats} />
+        <Metrics buildStats={stats} client:load />
         <Features />
         <HowItWorks />
         <ForWho />
