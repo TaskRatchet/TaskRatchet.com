@@ -42,12 +42,7 @@
 </script>
 
 {#if isMenuOpen}
-    <div
-        class="backdrop"
-        onclick={closeMenu}
-        onkeydown={(e) => e.key === "Escape" && closeMenu()}
-        aria-hidden="true"
-    ></div>
+    <div class="backdrop" onclick={closeMenu} aria-hidden="true"></div>
 {/if}
 <header class="site-header">
     <div class="container">
