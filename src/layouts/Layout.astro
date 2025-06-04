@@ -1,108 +1,125 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="TaskRatchet is a todo list that charges you real money if you don't complete your tasks on time." />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-		<title>TaskRatchet - The Todo List You Won't Ignore</title>
-		<style is:inline>
-			/* Critical styles to prevent flash */
-			:root {
-				--bg-main: white;
-				--text-primary: #1e293b;
-				--bg-header: rgba(255, 255, 255, 0.75);
-				--logo-text: #0f172a;
-				--primary: #3b82f6;
-				--secondary: #8b5cf6;
-				--gray-100: #f1f5f9;
-				--font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-					Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-			}
-			
-			@media (prefers-color-scheme: dark) {
-				:root {
-					--bg-main: #0f172a;
-					--text-primary: #f8fafc;
-					--bg-header: rgba(15, 23, 42, 0.75);
-					--logo-text: #f8fafc;
-				}
-			}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            name="description"
+            content="TaskRatchet is a todo list that charges you real money if you don't complete your tasks on time."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="https://fav.farm/🔧" />
+        <title>TaskRatchet - The Todo List You Won't Ignore</title>
+        <style is:inline>
+            /* Critical styles to prevent flash */
+            :root {
+                --bg-main: white;
+                --text-primary: #1e293b;
+                --bg-header: rgba(255, 255, 255, 0.75);
+                --logo-text: #0f172a;
+                --primary: #3b82f6;
+                --secondary: #8b5cf6;
+                --gray-100: #f1f5f9;
+                --font-sans:
+                    "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+                    sans-serif;
+            }
 
-			/* Ensure immediate dark mode if saved */
-			html[data-theme="dark"] {
-				--bg-main: #0f172a;
-				--text-primary: #f8fafc;
-				--bg-header: rgba(15, 23, 42, 0.75);
-				--logo-text: #f8fafc;
-			}
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg-main: #0f172a;
+                    --text-primary: #f8fafc;
+                    --bg-header: rgba(15, 23, 42, 0.75);
+                    --logo-text: #f8fafc;
+                }
+            }
 
-			body {
-				background-color: var(--bg-main);
-				color: var(--text-primary);
-				margin: 0;
-				font-family: var(--font-sans);
-			}
+            /* Ensure immediate dark mode if saved */
+            html[data-theme="dark"] {
+                --bg-main: #0f172a;
+                --text-primary: #f8fafc;
+                --bg-header: rgba(15, 23, 42, 0.75);
+                --logo-text: #f8fafc;
+            }
 
-			.header-logo {
-				width: 40px;
-				height: 40px;
-			}
+            body {
+                background-color: var(--bg-main);
+                color: var(--text-primary);
+                margin: 0;
+                font-family: var(--font-sans);
+            }
 
-			/* Prevent layout shift for hero section */
-			.hero {
-				min-height: 600px;
-				background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
-				padding: 14rem 0 6rem;
-				margin-top: -4rem;
-				text-align: center;
-			}
+            .header-logo {
+                width: 40px;
+                height: 40px;
+            }
 
-			/* Critical header styles */
-			.site-header {
-				padding: 1rem 0;
-				background: var(--bg-header);
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				z-index: 100;
-			}
+            /* Prevent layout shift for hero section */
+            .hero {
+                min-height: 600px;
+                background: linear-gradient(
+                    135deg,
+                    var(--gray-50) 0%,
+                    white 100%
+                );
+                padding: 14rem 0 6rem;
+                margin-top: -4rem;
+                text-align: center;
+            }
 
-			.container {
-				max-width: 1600px;
-				margin: 0 auto;
-				padding: 0 3rem;
-			}
+            /* Critical header styles */
+            .site-header {
+                padding: 1rem 0;
+                background: var(--bg-header);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 100;
+            }
 
-		</style>
-		<script is:inline>
-			// Initial theme setup - run as early as possible
-			(function() {
-				// Add class to disable transitions during load
-				document.documentElement.classList.add('no-transitions');
-				
-				const theme = localStorage.getItem('theme') || 
-					(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-				document.documentElement.setAttribute('data-theme', theme);
-				
-				// Remove the no-transitions class after a small delay
-				window.addEventListener('load', () => {
-					setTimeout(() => {
-						document.documentElement.classList.remove('no-transitions');
-					}, 100);
-				});
-			})();
-		</script>
-	</head>
-	<body>
-		<slot />
-	</body>
+            .container {
+                max-width: 1600px;
+                margin: 0 auto;
+                padding: 0 3rem;
+            }
+        </style>
+        <script is:inline>
+            // Initial theme setup - run as early as possible
+            (function () {
+                // Add class to disable transitions during load
+                document.documentElement.classList.add("no-transitions");
+
+                const theme =
+                    localStorage.getItem("theme") ||
+                    (window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? "dark"
+                        : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+
+                // Remove the no-transitions class after a small delay
+                window.addEventListener("load", () => {
+                    setTimeout(() => {
+                        document.documentElement.classList.remove(
+                            "no-transitions",
+                        );
+                    }, 100);
+                });
+            })();
+        </script>
+    </head>
+    <body>
+        <slot />
+    </body>
 </html>
