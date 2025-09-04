@@ -7,6 +7,7 @@
           <li><a href="https://app.taskratchet.com/register">Sign Up</a></li>
           <li><a href="https://app.taskratchet.com/login">Login</a></li>
           <li><a href="https://docs.taskratchet.com/">Documentation</a></li>
+          <li><a href="https://status.taskratchet.com/">Status</a></li>
         </ul>
       </div>
       <div class="footer-section">
